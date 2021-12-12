@@ -12,6 +12,7 @@ import { StatisticComponent } from './statistic/statistic.component';
 import { NewslatterComponent } from './newslatter/newslatter.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { HomeComponent } from './home/home.component';
     
     ContactComponent,
     
-    HomeComponent
+    HomeComponent,
+    
+    ContainerComponent
   ],
   imports: [
     BrowserModule,

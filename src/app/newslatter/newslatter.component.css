@@ -1,0 +1,21 @@
+
+
+
+ .s{
+    background-color: rgb(108, 75, 255);
+    width: 100%;
+    height: 22%;
+    margin-top: 30%;
+} 
+
+.col{
+    width: 15%;
+    float: left;
+    margin-left: 15px;
+    margin-top:5%;
+   
+}
+img{
+    float: right;
+    
+}
