@@ -13,6 +13,12 @@ import { NewslatterComponent } from './newslatter/newslatter.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ContainerComponent } from './container/container.component';
+import { PersonalAreaComponent } from './personal-area/personal-area.component';
+import { DetailsComponent } from './details/details.component';
+import { OrderListComponent } from './order-list/order-list.component';
+import { RoutsListComponent } from './routs-list/routs-list.component';
+import { DeliveriesListComponent } from './deliveries-list/deliveries-list.component';
+import { NewOrderComponent } from './new-order/new-order.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,19 @@ import { ContainerComponent } from './container/container.component';
     
     HomeComponent,
     
-    ContainerComponent
+    ContainerComponent,
+    
+    PersonalAreaComponent,
+    
+    DetailsComponent,
+    
+    OrderListComponent,
+    
+    RoutsListComponent,
+    
+    DeliveriesListComponent,
+    
+    NewOrderComponent
   ],
   imports: [
     BrowserModule,
