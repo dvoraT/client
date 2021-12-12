@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-personal-area',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalAreaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+// this.router.navigate(['/PersonalArea/PersonalNav'])
   }
 
 }

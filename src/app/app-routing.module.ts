@@ -10,6 +10,7 @@ import { NewOrderComponent } from './new-order/new-order.component';
 import { NewslatterComponent } from './newslatter/newslatter.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { PersonalAreaComponent } from './personal-area/personal-area.component';
+import { PersonalNavComponent } from './personal-nav/personal-nav.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { RoutsListComponent } from './routs-list/routs-list.component';
 import { StatisticComponent } from './statistic/statistic.component';
@@ -23,13 +24,16 @@ const routes: Routes = [
   {path:"NewsLatter", component:NewslatterComponent},
   {path:"Contact", component:ContactComponent}
     ]},
-    {path:"PersonalArea", component:PersonalAreaComponent, children:[
-      {path:"Details", component:DetailsComponent},
-      {path:"OrderList", component:OrderListComponent},
-      {path:"RoutsList", component:RoutsListComponent},
-      {path:"DeliveriesList",component:DeliveriesListComponent},
-      {path:"NewOrder",component:NewOrderComponent}
-    ]}
+    {path:"PersonalArea",component:PersonalAreaComponent, children:[
+      // {path:"PersonalNav",component:PersonalNavComponent, children:[
+        {path:"Details", component:DetailsComponent},
+        {path:"OrderList", component:OrderListComponent},
+        {path:"RoutsList", component:RoutsListComponent},
+        {path:"DeliveriesList",component:DeliveriesListComponent},
+        {path:"NewOrder",component:NewOrderComponent}
+      ]}
+    // ]}
+    
     
  
   

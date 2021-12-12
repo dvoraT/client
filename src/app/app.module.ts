@@ -19,6 +19,7 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { RoutsListComponent } from './routs-list/routs-list.component';
 import { DeliveriesListComponent } from './deliveries-list/deliveries-list.component';
 import { NewOrderComponent } from './new-order/new-order.component';
+import { PersonalNavComponent } from './personal-nav/personal-nav.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,9 @@ import { NewOrderComponent } from './new-order/new-order.component';
     
     DeliveriesListComponent,
     
-    NewOrderComponent
+    NewOrderComponent,
+    
+    PersonalNavComponent
   ],
   imports: [
     BrowserModule,
