@@ -20,6 +20,11 @@ import { RoutsListComponent } from './routs-list/routs-list.component';
 import { DeliveriesListComponent } from './deliveries-list/deliveries-list.component';
 import { NewOrderComponent } from './new-order/new-order.component';
 import { PersonalNavComponent } from './personal-nav/personal-nav.component';
+import { SingInComponent } from './sing-in/sing-in.component';
+import { SingUpComponent } from './sing-up/sing-up.component';
+import { ShowRoutComponent } from './show-rout/show-rout.component';
+import { ListPackagesComponent } from './list-packages/list-packages.component';
+import { DeliveryRoutsComponent } from './delivery-routs/delivery-routs.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +57,17 @@ import { PersonalNavComponent } from './personal-nav/personal-nav.component';
     
     NewOrderComponent,
     
-    PersonalNavComponent
+    PersonalNavComponent,
+    
+    SingInComponent,
+    
+    SingUpComponent,
+    
+    ShowRoutComponent,
+    
+    ListPackagesComponent,
+    
+    DeliveryRoutsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,21 @@
+/* body{
+    background-image: url("../../assets/pictures/home/pic5.jpg");
+    
+    
+} */
 
 body{
-    background-image:url("../../assets/pictures/home/pic3.jpg");
-    width:100%; 
-    height: 800px;
+    height: 890px;
+    background-image: url("../../assets/pictures/home/pic6.jpg");
 }
+
+.s{
+    background-color:#080662;
+    border: transparent;
+    border-radius:20px;
+    color: white;
+    margin-left: 42%;
+    margin-top: 30%;
+    width: 120px;
+    height: 35px;
+  }

@@ -1,0 +1,41 @@
+body{
+    background-image: url("../../assets/pictures/listPackages/pic1.jpg");
+}
+/* דיב עוטף לטבלה */
+.c{
+   
+    /* float: right; */
+    /* margin-right: 20%; */
+    /* margin-top: 10px; */
+    float: right;
+    margin-top: 5%;
+   margin-right: 10%;
+    height: 70%;
+    width: 35%;
+    background-color: rgb(255, 200, 111);
+    border-radius: 20px;
+    }
+
+    /* דיב עוטף לנאב */
+    .navC{
+        /* float: right; */
+        margin-left: 60%;
+       color: white;
+       
+    }
+
+    
+
+/* .headlines{
+    margin-top: 30px;
+    margin-left:55%;
+} */
+h1{
+   
+        font-size: 65px;
+        color: #080662;
+        font-family:sans-serif;
+        margin-left: 50%;
+        margin-top: 30px;
+
+}
