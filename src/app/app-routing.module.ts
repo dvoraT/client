@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContainerComponent } from './container/container.component';
 import { DeliveriesListComponent } from './deliveries-list/deliveries-list.component';
 import { DeliveryRoutsComponent } from './delivery-routs/delivery-routs.component';
 import { DetailsComponent } from './details/details.component';
@@ -21,6 +22,8 @@ import { SingUpComponent } from './sing-up/sing-up.component';
 import { StatisticComponent } from './statistic/statistic.component';
 
 const routes: Routes = [
+  {path:"HomePage", component:ContainerComponent},
+
   {path: "Nav", component:NavComponent, children:[
   {path:"Home", component:HomeComponent},
   {path:"About", component:AboutComponent},
@@ -38,12 +41,12 @@ const routes: Routes = [
         {path:"NewOrder",component:NewOrderComponent}
       ]},
     // ]}
-    
+
     {path:"SingIn", component:SingInComponent},
     {path:"SingUp",component:SingUpComponent},
-    
+
     {path:"DeliveryRouts",component:DeliveryRoutsComponent},
-  
+
   // {path:"DeliveryRouts",component:DeliveryRoutsComponent, children:[
     {path:"ListPackages", component:ListPackagesComponent},
     {path:"ShowRout",component:ShowRoutComponent}
@@ -51,9 +54,14 @@ const routes: Routes = [
   // ]}
 
 ];
-
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+  onSameUrlNavigation: 'reload',
+  scrollOffset: [0, 64],
+};
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

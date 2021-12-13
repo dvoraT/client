@@ -1,21 +1,16 @@
-/* body{
-    background-image: url("../../assets/pictures/home/pic5.jpg");
-    
-    
-} */
-
-body{
-    height: 890px;
-    background-image: url("../../assets/pictures/home/pic6.jpg");
-}
-
-.s{
-    background-color:#080662;
+.sing_in-button {
+    background-color: #080662;
     border: transparent;
-    border-radius:20px;
+    border-radius: 20px;
     color: white;
     margin-left: 42%;
-    margin-top: 30%;
-    width: 120px;
+    width: 15%;
     height: 35px;
-  }
+    left: 20%;
+    position: relative;
+    top: -50%;
+}
+
+* {
+    background-color: blue;
+}

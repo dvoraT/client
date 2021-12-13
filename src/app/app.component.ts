@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'client';
   constructor(public router:Router){}
-  ngOnInit(){
-    this.router.navigate(['/Nav/Home'])
-  }
+  // ngOnInit(){
+  //   this.router.navigate(['/Nav/Home'])
+  // }
 }
