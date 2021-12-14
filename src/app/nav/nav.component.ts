@@ -3,15 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
+  currentUrl: string = '';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 
   scroll(id) {
     console.log(`scrolling to ${id}`);
@@ -20,5 +18,7 @@ export class NavComponent implements OnInit {
     el.scrollIntoView();
   }
 
-
+  public changeUrlPath(fragment: string) {
+    this.currentUrl = fragment;
+  }
 }

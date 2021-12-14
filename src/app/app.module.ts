@@ -25,55 +25,56 @@ import { SingUpComponent } from './sing-up/sing-up.component';
 import { ShowRoutComponent } from './show-rout/show-rout.component';
 import { ListPackagesComponent } from './list-packages/list-packages.component';
 import { DeliveryRoutsComponent } from './delivery-routs/delivery-routs.component';
-
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    
+
     AboutComponent,
-    
+
     RecommendationsComponent,
-    
+
     StatisticComponent,
-    
+
     NewslatterComponent,
-    
+
     ContactComponent,
-    
+
     HomeComponent,
-    
+
     ContainerComponent,
-    
+
     PersonalAreaComponent,
-    
+
     DetailsComponent,
-    
+
     OrderListComponent,
-    
+
     RoutsListComponent,
-    
+
     DeliveriesListComponent,
-    
+
     NewOrderComponent,
-    
+
     PersonalNavComponent,
-    
+
     SingInComponent,
-    
+
     SingUpComponent,
-    
+
     ShowRoutComponent,
-    
+
     ListPackagesComponent,
-    
+
     DeliveryRoutsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,13 @@
 <div class="w3-top d-flex justify-content-center">
     <div class="w3-bar nav" id="myNavbar">
-        <button class="button" fragment="newslatter" routerLinkActive="active" [routerLink]="['/HomePage']">ניוזלייטר</button>
-        <button class="button" fragment="statistic" routerLinkActive="active" [routerLink]="['/HomePage']">סטטיסטיקות</button>
-        <button class="button" fragment="recommendations" routerLinkActive="active" [routerLink]="['/HomePage']">לקוחות ממליצים</button>
-        <button class="button" fragment="about" routerLinkActive="active" [routerLink]="['/HomePage']">אודות</button>
-        <button class="button" fragment="home" routerLinkActive="active" [routerLink]="['/HomePage']">בית</button>
+        <button class="button" (click)="changeUrlPath('newslatter')" fragment="newslatter" [ngClass]="currentUrl == 'newslatter' ? 'active' : 'button'" [routerLink]="['/HomePage']">ניוזלייטר</button>
+        <button class="button" (click)="changeUrlPath('statistic')" fragment="statistic" [ngClass]="currentUrl == 'statistic' ? 'active' : 'button'" [routerLink]="['/HomePage']">סטטיסטיקות</button>
+        <button class="button" (click)="changeUrlPath('recommendations')" fragment="recommendations" [ngClass]="currentUrl == 'recommendations' ? 'active' : 'button'" [routerLink]="['/HomePage']">לקוחות ממליצים</button>
+        <button class="button" (click)="changeUrlPath('about')" fragment="about" [ngClass]="currentUrl == 'about' ? 'active' : 'button'" [routerLink]="['/HomePage']">אודות</button>
+        <button class="button" (click)="changeUrlPath('home')" fragment="home" [ngClass]="currentUrl == 'home' ? 'active' : 'button'" [routerLink]="['/HomePage']">בית</button>
     </div>
+    <p class="icon_button" routerLink="/SingIn"></p>
+
 </div>
 <!-- <router-outlet></router-outlet> -->
 <!-- (click)="scroll('newslatter')" -->
