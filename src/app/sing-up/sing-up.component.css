@@ -1,4 +1,46 @@
-body{
-    height: 890;
-    background-image: url("../../assets/pictures/singIn/pic.jpg");
-}
+  
+.form__field {
+    font-family: inherit;
+    width: 15%;
+    border: 0;
+    border-bottom: 2px solid #080662;
+    outline: 0;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    /* padding: 7px 0; */
+    background: transparent;
+    transition: border-color 0.2s;
+    
+    /* margin-top: 20%;*/
+    margin-left: 40%; 
+
+ 
+    
+  }
+
+  
+.text_contain{
+    position: relative; 
+    top:-90%; 
+} 
+
+h1{
+    font-size: 80px;
+    color: #080662;
+    font-family:sans-serif; 
+    margin-left: 40%; 
+    margin-bottom: 5%;
+  
+   } 
+
+   button{
+    background-color:#080662;
+    border: transparent;
+    border-radius:20px;
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 43%;
+    margin-top: 2%;
+    width: 120px;
+    height: 35px;
+  }

@@ -1,7 +1,4 @@
-body{
-    height: 890px;
-    background-image: url("../../assets/pictures/singIn/pic.jpg");
-}
+/*  */
 
 
 /* .form__group {
@@ -44,17 +41,18 @@ body{
     height: 35px;
   }
 
-/*  
- h1{
-  font-size: 100px;
-  color: #080662;
-  font-family:sans-serif;
-  background-color: aliceblue;
-  margin-top: 150px;
- 
-
- 
-}  */
-
-
   
+ h1{
+  font-size: 80px;
+  color: #080662;
+  font-family:sans-serif; 
+  margin-left: 38%; 
+ margin-bottom: 5%;
+
+ } 
+
+
+.text_contain{
+    position: relative; 
+    top:-80%; 
+}   
