@@ -1,3 +1,10 @@
 * {
     font-family: 'Varela Round', sans-serif;
 }
+footer{
+ background-color: #080662;
+ border: transparent;
+ font-size: medium;
+ color: white;
+ right: auto;
+}
