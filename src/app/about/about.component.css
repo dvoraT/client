@@ -11,19 +11,25 @@ img {
 
 h1 {
     font-size: 80px;
-    color: rgb(255, 200, 111);
+    color: rgb(254, 171, 105);
     font-family: sans-serif;
-    text-align: end;
-    margin-bottom: 50%;
+    text-align:start;
+    /* margin-bottom: 50%; */
+    /* border: 1px solid red; */
+    
+    /* top: 20px; */
     /* margin-top: 30%; */
     /* margin-right: 30%; */
-    /* margin-bottom: 5%; */
+     
+}
+.line{
+    border-bottom: 1px solid  black;
+    width: 25%;
+    margin-top: 4%;
 }
 
 .container1 {
-    background-color: rebeccapurple;
-    height: 800px;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     height: 800px;
     display: flex;
     justify-content: space-around;
@@ -33,9 +39,7 @@ h1 {
 }
 
 .aligh-item {
-    background-color: rgb(51, 153, 148);
-    height: 600px;
-    background-color: rgb(51, 153, 148);
+    /* background-color: rgb(51, 153, 148); */
     height: 600px;
     display: flex;
     justify-content: space-around;

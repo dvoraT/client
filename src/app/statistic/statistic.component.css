@@ -1,0 +1,36 @@
+
+.container1 {
+    background-color: rebeccapurple;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.aligh-item {
+    background-color: rgb(51, 153, 148);
+    height: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70%;
+}
+h1{
+    font-size: 80px;
+    color: rgb(28,130,241);
+    font-family: sans-serif;
+    text-align:end;
+}
+.line{
+    border-bottom: 1px solid  black;
+    width: 30%;
+    float: right;
+    margin-top: 1%;
+}
