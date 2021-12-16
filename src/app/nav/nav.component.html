@@ -1,5 +1,6 @@
 <div class="w3-top d-flex justify-content-center">
     <div class="w3-bar nav" id="myNavbar">
+        <button class="button" (click)="changeUrlPath('contact')" fragment="contact" [ngClass]="currentUrl == 'contact' ? 'active' : 'button'" [routerLink]="['/HomePage']">צור קשר</button>
         <button class="button" (click)="changeUrlPath('newslatter')" fragment="newslatter" [ngClass]="currentUrl == 'newslatter' ? 'active' : 'button'" [routerLink]="['/HomePage']">ניוזלייטר</button>
         <button class="button" (click)="changeUrlPath('statistic')" fragment="statistic" [ngClass]="currentUrl == 'statistic' ? 'active' : 'button'" [routerLink]="['/HomePage']">סטטיסטיקות</button>
         <button class="button" (click)="changeUrlPath('recommendations')" fragment="recommendations" [ngClass]="currentUrl == 'recommendations' ? 'active' : 'button'" [routerLink]="['/HomePage']">לקוחות ממליצים</button>
