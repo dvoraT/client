@@ -32,7 +32,8 @@
     height: 38px;
     width: 38px;
     background-image: url("../../assets/pictures/home/pic2.png");
-    left: 2%;
+    left: 1%;
+    /* top: 6%; */
     top: 20%;
     position: absolute;
 }
