@@ -7,4 +7,24 @@ footer{
  font-size: medium;
  color: white;
  right: auto;
+ height: 300px;
 }
+h1{
+    color: rgb(28,130,241);
+}
+.big {
+    float: right;
+    display: flex;
+    margin: 10px;
+    padding-top: 40px;
+    padding-right: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+
+}
+.big div{
+    padding-left:100px;
+    direction: rtl;
+}
+
+

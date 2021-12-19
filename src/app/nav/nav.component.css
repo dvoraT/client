@@ -37,3 +37,12 @@
     top: 20%;
     position: absolute;
 }
+.myLogo{
+     width: 100px;
+     height: 70px;
+     /* background-color: black; */
+     background-image: url("../../assets/pictures/home/logo.png");
+     right:1%;
+     top:20%;
+     position: absolute;
+ }
