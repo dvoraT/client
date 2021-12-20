@@ -7,7 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AboutComponent } from './about/about.component';
-import { RecommendationsComponent } from './recommendations/recommendations.component';
+// import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { StatisticComponent } from './statistic/statistic.component';
 import { NewslatterComponent } from './newslatter/newslatter.component';
 import { ContactComponent } from './contact/contact.component';
@@ -26,6 +26,8 @@ import { ShowRoutComponent } from './show-rout/show-rout.component';
 import { ListPackagesComponent } from './list-packages/list-packages.component';
 import { DeliveryRoutsComponent } from './delivery-routs/delivery-routs.component';
 import {MatIconModule} from '@angular/material/icon';
+import { ClientRecommendationsComponent } from './client-recommendations/client-recommendations.component';
+// import { RecommendationsComponent } from './recommendations/recommendations.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,7 @@ import {MatIconModule} from '@angular/material/icon';
 
     AboutComponent,
 
-    RecommendationsComponent,
+    // RecommendationsComponent,
 
     StatisticComponent,
 
@@ -67,7 +69,11 @@ import {MatIconModule} from '@angular/material/icon';
 
     ListPackagesComponent,
 
-    DeliveryRoutsComponent
+    DeliveryRoutsComponent,
+
+    ClientRecommendationsComponent,
+
+    // RecommendationsComponent
   ],
   imports: [
     BrowserModule,

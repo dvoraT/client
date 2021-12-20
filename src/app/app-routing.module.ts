@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { ClientRecommendationsComponent } from './client-recommendations/client-recommendations.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContainerComponent } from './container/container.component';
 import { DeliveriesListComponent } from './deliveries-list/deliveries-list.component';
@@ -14,7 +15,7 @@ import { NewslatterComponent } from './newslatter/newslatter.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { PersonalAreaComponent } from './personal-area/personal-area.component';
 import { PersonalNavComponent } from './personal-nav/personal-nav.component';
-import { RecommendationsComponent } from './recommendations/recommendations.component';
+// import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { RoutsListComponent } from './routs-list/routs-list.component';
 import { ShowRoutComponent } from './show-rout/show-rout.component';
 import { SingInComponent } from './sing-in/sing-in.component';
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: "Nav", component:NavComponent, children:[
   {path:"Home", component:HomeComponent},
   {path:"About", component:AboutComponent},
-  {path:"Recommendations", component:RecommendationsComponent},
+  {path:"recomendations", component:ClientRecommendationsComponent},
+  // {path:"Recommendations", component:RecommendationsComponent},
   {path:"Statistic", component:StatisticComponent},
   {path:"NewsLatter", component:NewslatterComponent},
   {path:"Contact", component:ContactComponent}
