@@ -1,4 +1,4 @@
-<p>personal-area works!</p>
+
 <!-- <div class="container">
 <table class="table table-bordered">
     <thead>
@@ -23,30 +23,49 @@
 
 </table>
 </div> -->
-<html>
-    <body>
+<img src="../../assets/pictures/prsonalArea/pic1.jpg">
+
 <div class="c" >
+
 <ul class="nav nav-tabs">
     <li >
-      <a class="nav-link active" href="#" routerLink="/PersonalArea/NewOrder">יצירת הזמנה חדשה</a>
+      <a class="nav-link active" href="#" routerLink="/PersonalArea" (click)="ChangeName('newOrder')">יצירת הזמנה חדשה</a>
     </li>
     <li >
-      <a class="nav-link" href="#" routerLink="/PersonalArea/DeliveriesList">שליחים</a>
+      <a class="nav-link" href="#"  routerLink="/PersonalArea" (click)="ChangeName('deliveries')">שליחים</a>
     </li>
     <li >
-      <a class="nav-link" href="#" routerLink="/PersonalArea/RoutsList">תצוגת מסלולים</a>
+      <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('routsList')">תצוגת מסלולים</a>
     </li>
     <li >
-        <a class="nav-link" href="#" routerLink="/PersonalArea/OrderList">תצוגת הזמנות</a>
+        <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('orderList')">תצוגת הזמנות</a>
       </li>
       <li >
-        <a class="nav-link" href="#" routerLink="/PersonalArea/Details">פרטים אישיים </a>
+        <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('details')">פרטים אישיים </a>
       </li>
     
   </ul>
+  <div *ngIf= "nameToDisplay=='details'">
+    <app-details></app-details>
+  </div>
+
+  <div *ngIf= "nameToDisplay=='orderList'">
+    <app-order-list></app-order-list>
+  </div>
+
+  <div *ngIf= "nameToDisplay=='routsList'">
+    <app-routs-list></app-routs-list>
+  </div>
+
+  <div *ngIf= "nameToDisplay=='deliveries'">
+    <app-deliveries-list></app-deliveries-list>
+  </div>
+
+  <div *ngIf= "nameToDisplay=='newOrder'">
+    <app-new-order></app-new-order>
+  </div>
 </div>
 
-</body>
 
-</html>
-<router-outlet></router-outlet>
+
+<!-- <router-outlet></router-outlet> -->

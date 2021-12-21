@@ -34,14 +34,15 @@ const routes: Routes = [
   {path:"NewsLatter", component:NewslatterComponent},
   {path:"Contact", component:ContactComponent}
     ]},
-    {path:"PersonalArea",component:PersonalAreaComponent, children:[
-      // {path:"PersonalNav",component:PersonalNavComponent, children:[
-        {path:"Details", component:DetailsComponent},
+    {path:"PersonalArea",component:PersonalAreaComponent},
+    {path:"Details", component:DetailsComponent},
         {path:"OrderList", component:OrderListComponent},
         {path:"RoutsList", component:RoutsListComponent},
         {path:"DeliveriesList",component:DeliveriesListComponent},
-        {path:"NewOrder",component:NewOrderComponent}
-      ]},
+        {path:"NewOrder",component:NewOrderComponent},
+      // {path:"PersonalNav",component:PersonalNavComponent, children:[
+        
+      
     // ]}
 
     {path:"SingIn", component:SingInComponent},

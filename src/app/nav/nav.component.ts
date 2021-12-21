@@ -7,10 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
-  currentUrl: string = '';
+  currentUrl: string = ' ';
   constructor(public router:Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // this.router.navigate[('/HomePage#home')]
+  }
 
  
 

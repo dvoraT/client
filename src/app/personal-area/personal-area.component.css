@@ -5,18 +5,18 @@
 body{
     background-image: url("../../assets/pictures/prsonalArea/background.jpg");
 } */
-body{
+/* body{
     background-image: url("../../assets/pictures/prsonalArea/background.jpg");
-}
+} */
 
 /* הגדות לדיב העוטף */
 .c{
    
     float: right;
     margin-right: 20%;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     height: 70%;
-    width: 35%;
+    width: 37%;
     background-color: rgb(255, 200, 111);
     }
     
