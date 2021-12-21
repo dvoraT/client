@@ -91,10 +91,10 @@ label {
     
 }
 
-label[for="diamonds"],
+/* label[for="diamonds"],
 label[for="hearts"] {
 	background: #cc0000;
-}
+} */
 
 label:before,
 label:after {

@@ -17,7 +17,7 @@
                           <a class="nav-link" href="#" routerLink="/ShowRout">תצוגת מסלול</a>
                         </li>
                         <li >
-                          <a class="nav-link" href="#" routerLink="/ListPackages">תצוגת חבילות</a>
+                          <a class="nav-link" href="#" routerLink="/ListPackages" table:style="${condition ? 'display:block' : 'display:none'}">תצוגת חבילות</a>
                         </li>
                 
                         
@@ -26,11 +26,11 @@
                 </div>
 
 
-
+<!-- <button class="y">yes</button> -->
 <!-- דיב עוטף לטבלה -->
 <div class="c">
-
-    <table class="table  ">
+    <!-- th:style="${condition ? 'display:block' : 'display:none'}"  -->
+    <table class="table"  >
         <thead>
             <tr>
                 <th>קוד שליח</th>
