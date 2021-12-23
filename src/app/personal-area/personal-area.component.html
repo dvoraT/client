@@ -23,25 +23,24 @@
 
 </table>
 </div> -->
-<img class="w3-image" src="../../assets/pictures/prsonalArea/pic1.jpg" alt="Hamburger Catering">
+<!-- <img class="w3-image" src="../../assets/pictures/prsonalArea/pic1.jpg" alt="Hamburger Catering" >
 
 <div class="c" >
-
 <ul class="nav nav-tabs">
     <li >
-      <a class="nav-link active" href="#" routerLink="/PersonalArea" (click)="ChangeName('newOrder')">יצירת הזמנה חדשה</a>
+      <a class="nav-link active" href="#" routerLink="/PersonalArea" (click)="ChangeName('newOrder','pic1.jpg')">יצירת הזמנה חדשה</a>
     </li>
     <li >
-      <a class="nav-link" href="#"  routerLink="/PersonalArea" (click)="ChangeName('deliveries')">שליחים</a>
+      <a class="nav-link" href="#"  routerLink="/PersonalArea" (click)="ChangeName('deliveries','pic2.jpg')">שליחים</a>
     </li>
     <li >
-      <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('routsList')">תצוגת מסלולים</a>
+      <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('routsList','pic3.jpg')">תצוגת מסלולים</a>
     </li>
     <li >
-        <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('orderList')">תצוגת הזמנות</a>
+        <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('orderList','pic4.jpg')">תצוגת הזמנות</a>
       </li>
       <li >
-        <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('details')">פרטים אישיים </a>
+        <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('details', 'pic5.jpg')">פרטים אישיים </a>
       </li>
     
   </ul>
@@ -64,8 +63,103 @@
   <div *ngIf= "nameToDisplay=='newOrder'">
     <app-new-order></app-new-order>
   </div>
-</div>
+</div> -->
+<!-- justify-content-center -->
+<!-- d-flex -->
 
+        
+   
+        <!-- <div class="container1"  style="background-image: url();">
+          <img src='../../assets/pictures/prsonalArea/pic1.jpg' width="1600" height="900">
+  <div class="c_contain">
+    <div class="w3-top" class="nav_contain">
+      <div class="w3-bar nav" id="myNavbar" >
+        
+        <button class="button" (click)="ChangeName('newOrder','pic5')" [ngClass]="nameToDisplay == 'newOrder' ? 'active' : 'button'">יצירת הזמנה חדשה</button>
+        <button class="button" (click)="ChangeName('deliveries','pic4')" [ngClass]="nameToDisplay == 'deliveries' ? 'active' : 'button'">שליחים</button>
+        <button class="button" (click)="ChangeName('routsList','pic3')" [ngClass]="nameToDisplay == 'routsList' ? 'active' : 'button'">תצוגת מסלולים</button>
+        <button class="button" (click)="ChangeName('orderList','pic2')" [ngClass]="nameToDisplay == 'orderList' ? 'active' : 'button'">תצוגת הזמנות</button>
+        <button class="button" (click)="ChangeName('details','pic1')" [ngClass]="nameToDisplay == 'details' ? 'active' : 'button'">פרטים אישיים</button>
+        </div>
+      </div>
+
+      <div *ngIf= "nameToDisplay=='details'">
+        <app-details></app-details>
+      </div>
+    
+      <div *ngIf= "nameToDisplay=='orderList'">
+        <app-order-list></app-order-list>
+      </div>
+    
+      <div *ngIf= "nameToDisplay=='routsList'">
+        <app-routs-list></app-routs-list>
+      </div>
+    
+      <div *ngIf= "nameToDisplay=='deliveries'">
+        <app-deliveries-list></app-deliveries-list>
+      </div>
+    
+      <div *ngIf= "nameToDisplay=='newOrder'">
+        <app-new-order></app-new-order>
+      </div>
+    </div>
+    
+
+</div> -->
+
+  
 
 
 <!-- <router-outlet></router-outlet> -->
+
+
+
+<div class="itmes_contain">
+  <div class="title" >
+    <h1>איזור אישי</h1>
+  </div>
+  <div class="nav_contain" >
+    <div class="w3-top" class="nav_contain">
+      <div class="w3-bar nav" id="myNavbar" >
+  
+      
+        <button class="button"  (click)="ChangeName('newOrder')" [ngClass]="nameToDisplay == 'newOrder' ? 'active' : 'button'" >יצירת הזמנה חדשה</button>
+        <button class="button" (click)="ChangeName('deliveries')" [ngClass]="nameToDisplay == 'deliveries' ? 'active' : 'button'">שליחים</button>
+        <button class="button" (click)="ChangeName('routsList')" [ngClass]="nameToDisplay == 'routsList' ? 'active' : 'button'">תצוגת מסלולים</button>
+        <button class="button" (click)="ChangeName('orderList')" [ngClass]="nameToDisplay == 'orderList' ? 'active' : 'button'">תצוגת הזמנות</button>
+        <button class="button" (click)="ChangeName('details')" [ngClass]="nameToDisplay == 'details' ? 'active' : 'button'">פרטים אישיים</button>
+
+        
+        
+        </div>
+      </div>
+  </div>
+
+
+
+<div class="c_contain">
+
+              <div *ngIf= "nameToDisplay=='details'">
+                <app-details></app-details>
+              </div>
+
+              <div *ngIf= "nameToDisplay=='orderList'">
+                <app-order-list></app-order-list>
+              </div>
+
+              <div *ngIf= "nameToDisplay=='routsList'">
+                <app-routs-list></app-routs-list>
+              </div>
+
+              <div *ngIf= "nameToDisplay=='deliveries'">
+                <app-deliveries-list></app-deliveries-list>
+              </div>
+
+              <div *ngIf= "nameToDisplay=='newOrder'">
+                <app-new-order></app-new-order>
+              </div>
+
+
+</div>
+
+</div>

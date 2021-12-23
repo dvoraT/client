@@ -1,22 +1,72 @@
-/* body{
-    background-image: url("../../assets/pictures/prsonalArea/pic1.jpg");
-} */
-/* 
-body{
-    background-image: url("../../assets/pictures/prsonalArea/background.jpg");
-} */
-/* body{
-    background-image: url("../../assets/pictures/prsonalArea/background.jpg");
-} */
 
-/* הגדות לדיב העוטף */
-.c{
-   
-    float: right;
-    margin-right: 20%;
-    /* margin-top: 10%; */
-    height: 70%;
-    width: 37%;
-    background-color: rgb(255, 200, 111);
+
+    
+.title{
+    margin-left:15%;
+    text-align: center;
+    display: grid;
+    /* margin-top: 4%; */
+    height: 20%;
+    width: 70%;
+    /* background-color: darkgoldenrod; */
+    font-weight: bold;
+
+}
+
+h1{
+    font-size: 80px;
+    color:rgb(16, 9, 102);
+    font-family: sans-serif;
+    /* text-align:start; */
+}
+    .button {
+        border:transparent;
+        margin-left:20px;
+        background: transparent;
+        color:rgb(16, 9, 102) ;
+        height:50px;
     }
+
+    .active {
+        font-weight: bold;
+        background-color: #feab69;
+        border-radius: 20px;
+    }
+
+    .container1 {
+        width: 100%;
+        height: 900px;
+    }
+
+  
+
+    .itmes_contain{
+   /* background-color: cadetblue; */
+
+        float: right;
+        margin-top: 8%;
+        height: 85%;
+        width: 35%;
+        margin-right: 20%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between */
+    }
+
+    .nav_contain{
+        background:transparent;
+        text-align: center;
+        height: 6%;
+        /* background-color: crimson; */
+    }
+
+    .c_contain{
+        background-color: #feab69;
+         height: 94%;
+         width: 100%;
+         border-radius: 3%;
+    }
+    
+   
+    
     

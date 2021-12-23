@@ -1,28 +1,46 @@
 
-<html>
-    <body>
-        <p>delivery-routs works!</p>
-        <div class="headlines">
-            <h1>תצוגת מסלולים</h1>
-            <div>
-                שם השליח
-            </div>
-        
-            <ul class="nav nav-tabs">
-                <li >
-                  <a class="nav-link active" href="#" >פרטי שליח</a>
-                </li>
-                <li >
-                  <a class="nav-link" href="#" routerLink="/DeliveryRouts/ShowRout">תצוגת מסלול</a>
-                </li>
-                <li >
-                  <a class="nav-link" href="#" routerLink="/ListPackages">תצוגת חבילות</a>
-                </li>
-        
-                
-              </ul>
-        
+
+
+
+<div class="contain1" >
+<!-- <img src="../../assets/pictures/listPackages/pic1.jpg"> -->
+    <div class="itmes_contain">
+      <div class="titles" >
+        <h1>תצוגת מסלולים</h1>
+        <div class="delivery_name">
+           <p>שם השליח</p>
         </div>
-    </body>
-</html>
-<!-- <router-outlet></router-outlet> -->
+      </div>
+      <div class="nav_contain" >
+        <div class="w3-top" class="nav_contain">
+          <div class="w3-bar nav" id="myNavbar" >
+      
+            <button class="button" (click)="ChangeName('listPackages')" [ngClass]="nameToDisplay == 'listPackages' ? 'active' : 'button'">תצוגת חבילות</button>
+            <button class="button" (click)="ChangeName('showRout')" [ngClass]="nameToDisplay == 'showRout' ? 'active' : 'button'">תצוגת מסלול</button>
+            <button class="button" (click)="ChangeName('deliveryDetails')" [ngClass]="nameToDisplay == 'deliveryDetails' ? 'active' : 'button'">פרטי השליח</button>
+
+            
+            </div>
+          </div>
+      </div>
+
+
+
+  <div class="c_contain">
+
+          <div *ngIf= "nameToDisplay=='deliveryDetails'">
+                <!-- <app-details> hhh</app-details> -->
+          </div>
+
+          <div *ngIf= "nameToDisplay=='showRout'">
+              <app-show-rout></app-show-rout>
+          </div>
+
+          <div *ngIf= "nameToDisplay=='listPackages'">
+              <app-list-packages></app-list-packages>
+          </div>
+
+  </div>
+    </div>
+    
+  </div>

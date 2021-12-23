@@ -7,11 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./delivery-routs.component.css']
 })
 export class DeliveryRoutsComponent implements OnInit {
-
+nameToDisplay:string="deliveryDetails";
   constructor() { }
 
   ngOnInit(): void { 
     
+  }
+  ChangeName(name:string){
+    this.nameToDisplay=name;
   }
 
 }

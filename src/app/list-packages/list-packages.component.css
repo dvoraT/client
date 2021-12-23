@@ -1,20 +1,8 @@
-body{
-    background-image: url("../../assets/pictures/listPackages/pic1.jpg");
-}
-/* דיב עוטף לטבלה */
-.c{
+
+
+
    
-    /* float: right; */
-    /* margin-right: 20%; */
-    /* margin-top: 10px; */
-    float: right;
-    margin-top: 5%;
-   margin-right: 10%;
-    height: 70%;
-    width: 35%;
-    background-color: rgb(255, 200, 111);
-    border-radius: 20px;
-    }
+    
 
     /* דיב עוטף לנאב */
     .navC{
@@ -24,10 +12,7 @@ body{
        
     }
 
-    table{
-        display:none;
-    }
-
+    
 /* .headlines{
     margin-top: 30px;
     margin-left:55%;

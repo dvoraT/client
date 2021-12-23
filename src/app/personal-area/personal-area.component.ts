@@ -8,7 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./personal-area.component.css']
 })
 export class PersonalAreaComponent implements OnInit {
-public nameToDisplay='details'
+public nameToDisplay='details';
+public currentBackground:string='pic1.jpg';
+public c_url;
+
+public picUrl="../../assets/pictures/prsonalArea/"+this.currentBackground;
+
   constructor(public router:Router) { }
 
   ngOnInit() {
@@ -18,6 +23,9 @@ public nameToDisplay='details'
 
   ChangeName(name:string){
     this.nameToDisplay=name;
+    // this.currentBackground=pic;
+    // this.c_url='../../assets/pictures/prsonalArea/'+this.currentBackground;
+    // this.currentBackground=pic;
   }
 
 }
