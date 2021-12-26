@@ -16,4 +16,9 @@ export class UserService {
    public signIn(url:string, user:User):Observable<any>{
      return this.http.post<any>(this.url,user);
    }
+// מה אנחנו נחזיר
+   public signUp(newUser:User):Observable<boolean>{
+     //איזה סוג יחזור מהשרת
+     return this.http.post<boolean>(this.url,newUser);
+   }
 }

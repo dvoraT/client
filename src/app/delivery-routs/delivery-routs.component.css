@@ -3,8 +3,8 @@
         height: 850px;
         width: 1600px;
         background-image: url("../../assets/pictures/listPackages/pic1.jpg");
-        display: flex;
-        justify-content: flex-end
+        /* display: flex;
+        justify-content: flex-end; */
     }
     .titles{
         /* background-color: darkgoldenrod; */
@@ -25,6 +25,8 @@
     }
     h1{
         font-size: 60px;
+        color:rgb(16, 9, 102);
+
     }
 
     .delivery_name{

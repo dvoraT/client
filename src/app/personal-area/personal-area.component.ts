@@ -21,9 +21,9 @@ public picUrl="../../assets/pictures/prsonalArea/"+this.currentBackground;
 // this.router.navigate(['/PersonalArea/PersonalNav'])
   }
 
-  ChangeName(name:string){
+  ChangeName(name:string, pic:string){
     this.nameToDisplay=name;
-    // this.currentBackground=pic;
+    this.currentBackground=pic;
     // this.c_url='../../assets/pictures/prsonalArea/'+this.currentBackground;
     // this.currentBackground=pic;
   }

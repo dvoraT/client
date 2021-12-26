@@ -2,27 +2,29 @@
 <img class="w3-image" src="../../assets/pictures/singIn/pic.jpg" alt="Hamburger Catering " width="1600" height="800">
 
 <div class="text_contain">
+
         <h1>הרשמה</h1>
-        <input  type="text" class="form__field" placeholder="שם משתמש" />
+        <input  type="text" class="form__field" placeholder="שם משתמש" [(ngModel)]='newUser.user_name' />
         <label  class="form__label"> </label>
         <br>
-        <input  type="text" class="form__field" placeholder="סיסמא" style="margin-top: 2%;"/>
+        <input  type="text" class="form__field" placeholder="סיסמא" style="margin-top: 2%;" [(ngModel)]='newUser.user_password'/>
         <label  class="form__label"> </label>
         <br>
-        <input  type="text" class="form__field" placeholder="שם העסק" style="margin-top: 2%;"/>
+        <input  type="text" class="form__field" placeholder="שם העסק" style="margin-top: 2%;"  [(ngModel)]='newUser.name'/>
         <label  class="form__label"> </label>
         <br>
-        <input  type="text" class="form__field" placeholder="כתובת" style="margin-top: 2%;"/>
+        <input  type="text" class="form__field" placeholder="כתובת" style="margin-top: 2%;"  [(ngModel)]='newUser.address'/>
         <label  class="form__label"> </label>
         <br>
-        <input  type="text" class="form__field" placeholder="ח.פ" style="margin-top: 2%;"/>
+        <input  type="text" class="form__field" placeholder="ח.פ" style="margin-top: 2%;"  [(ngModel)]='newUser.id'/>
         <label  class="form__label"> </label>
         <br>
-        <input  type="text" class="form__field" placeholder="טלפון" style="margin-top: 2%;"/>
+        <input  type="text" class="form__field" placeholder="טלפון" style="margin-top: 2%;"  [(ngModel)]='newUser.phone'/>
         <label  class="form__label"> </label>
         <br>
-        <input  type="text" class="form__field" placeholder="מייל" style="margin-top: 2%;"/>
+        <input  type="text" class="form__field" placeholder="מייל" style="margin-top: 2%;"  [(ngModel)]='newUser.email'/>
         <label  class="form__label"> </label>
         <br>
-        <button  >אישור</button>
+        <button (click)="addNewUser(newUser)" >אישור</button>
 </div>
+

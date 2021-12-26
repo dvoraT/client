@@ -27,6 +27,8 @@ import { ListPackagesComponent } from './list-packages/list-packages.component';
 import { DeliveryRoutsComponent } from './delivery-routs/delivery-routs.component';
 import {MatIconModule} from '@angular/material/icon';
 import { ClientRecommendationsComponent } from './client-recommendations/client-recommendations.component';
+import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
+import { FormsModule } from '@angular/forms';
 // import { RecommendationsComponent } from './recommendations/recommendations.component';
 @NgModule({
   declarations: [
@@ -73,13 +75,17 @@ import { ClientRecommendationsComponent } from './client-recommendations/client-
 
     ClientRecommendationsComponent,
 
+    DeliveryDetailsComponent,
+
     // RecommendationsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
+
 
   ],
   providers: [],

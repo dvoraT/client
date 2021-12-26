@@ -1,0 +1,13 @@
+
+
+.form_container{
+    height: 500px;
+    width: 90%;
+    background-color: aqua;
+    /* display: flex; */
+}
+
+.form-control{
+    width: 60%;
+    
+}
