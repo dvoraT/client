@@ -1,5 +1,23 @@
-.container1{
-width: 600px;
-height: 600px;
-background-image: s;
+.form-control{
+    background-color: #feab69;
+    border: none;
+    direction: rtl;
+    margin-right: 50px;
+}
+h1{
+    font-weight: bolder;
+    font-size: larger;
+    color:rgb(16, 9, 102);
+    direction: rtl;
+    font-weight: 200;
+
+}
+.OK-button{
+    background-color: #feab69;
+    border-radius: 20px;
+    color:rgb(16, 9, 102);
+    width: 15%;
+    height: 35px;
+    position: relative;
+    /* margin-top: 900px; */
 }
