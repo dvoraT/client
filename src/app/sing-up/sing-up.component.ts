@@ -15,7 +15,7 @@ newUser:User=new User();
 
   public addNewUser(newUser:User)
   { debugger
-    alert('kk')
+    alert('Add user!')
   }
 
 }

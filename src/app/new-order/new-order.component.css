@@ -1,15 +1,17 @@
 .form-control{
     background-color: #feab69;
-    border: none;
+    /* border-color: whitesmoke; */
     direction: rtl;
-    margin-right: 50px;
+    margin-left: 350px;
+    width: 200px;
 }
 h1{
+    font-size: large;
     font-weight: bolder;
-    font-size: larger;
     color:rgb(16, 9, 102);
     direction: rtl;
-    font-weight: 200;
+    margin-right: 20px;
+    margin-top: 5px;
 
 }
 .OK-button{

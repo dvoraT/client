@@ -65,10 +65,12 @@ h1{
 
     .img_contain,
    .itmes_contain {
+       /* את הדיב הזה צריך להזיז ימינה */
       width: 50%;
       height: 50%;
+      /* התכונה הזאת מפריעה לו לזוז */
       position: absolute;
-  
+     /* margin-left: 20px; */
       /* top: 0; */
       /* left: 0; */
     }
