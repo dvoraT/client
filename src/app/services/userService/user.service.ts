@@ -8,7 +8,7 @@ import { User } from 'src/classes/User';
   providedIn: 'root'
 })
 export class UserService {
-  url:string="https://localhost:44353/api/"
+  url:string="http://localhost:61249/api/Users"
   constructor(private http:HttpClient) {
 
    }
@@ -17,8 +17,16 @@ export class UserService {
      return this.http.post<any>(this.url,user);
    }
 // מה אנחנו נחזיר
-   public signUp(newUser:User):Observable<boolean>{
+  //  public signUp(newUser:number):Observable<boolean>{
+    //  debugger
      //איזה סוג יחזור מהשרת
-     return this.http.post<boolean>(this.url,newUser);
-   }
+    //  return this.http.get<boolean>('http://localhost:61249/api/Users/A');
+  //  }
+
+   // מה אנחנו נחזיר
+  public signUp(newUser:User):Observable<boolean>{
+   debugger
+    //איזה סוג יחזור מהשרת
+   return this.http.put<boolean>(this.url+'/addUser',newUser);
+ }
 }
