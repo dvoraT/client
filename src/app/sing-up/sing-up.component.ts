@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/classes/User';
+import { UserService } from '../services/userService/user.service';
 
 @Component({
   selector: 'app-sing-up',
@@ -8,14 +9,24 @@ import { User } from 'src/classes/User';
 })
 export class SingUpComponent implements OnInit {
 newUser:User=new User();
-  constructor() { }
+  constructor(private userService:UserService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
   }
 
   public addNewUser(newUser:User)
   { debugger
-    alert('Add user!')
+        // alert('kk')
+
+    // this.userService.signUp(7).subscribe(u=>{
+    // this.userService.signUp(this.newUser).subscribe(u=>{
+
+    //   alert(u)
+    // });
+
+    this.userService.signUp(this.newUser).subscribe(data=>{console.log("נוסף למערכת")}, err=>{"שגיאה"});
   }
 
 }
+
+
