@@ -57,7 +57,7 @@ import { FormsModule } from '@angular/forms';
 
     RoutsListComponent,
 
-    // DeliveriesListComponent,
+    DeliveriesListComponent,
 
     NewOrderComponent,
 
