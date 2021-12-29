@@ -1,0 +1,14 @@
+h1{
+    font-weight: bold;
+    color:rgb(16, 9, 102);
+    font-size: large;
+}
+.asaid{
+    background-color: rgb(254,171,105);
+    width: 300px;
+    height: 300px;
+    /* margin-top: 50px; */
+    margin-left: 400px;
+    direction: rtl;
+    padding: 2px;
+}
