@@ -25,12 +25,13 @@
 
 <div class="text_contain" >
     <h1 >התחברות</h1>
-       <input  type="text" class="form__field" placeholder="שם משתמש" />
+       <input  type="text" class="form__field" placeholder="שם משתמש" name="userName" [(ngModel)]="userName" />
        <label  class="form__label"> </label>
        <br>
-       <input  type="text" class="form__field" placeholder="סיסמא" style="margin-top: 2%;"/>
+       <input  type="text" class="form__field" placeholder="סיסמא" style="margin-top: 2%;" name="passwors" [(ngModel)]="password"/>
        <label  class="form__label"> </label>
        <br>
+       <button (click)="check()">אישור</button>
        <button routerLink="/SingUp" >יצירת חשבון חדש</button>
 
    </div>

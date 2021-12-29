@@ -9,6 +9,7 @@ import { User } from 'src/classes/User';
 })
 export class UserService {
   url:string="http://localhost:61249/api/Users"
+  answer:boolean
   constructor(private http:HttpClient) {
 
    }
@@ -30,6 +31,20 @@ export class UserService {
   //  return this.http.put<boolean>(this.url+'/addUser',newUser);
 
   return this.http.put<boolean>(this.url+'/addUser',newUser);
+
+ }
+
+
+ isUserExist(userName:string,password:string){
+  debugger
+   this.http.get<boolean>(this.url+"/isUserExist/"+userName+"/"+password).subscribe(
+     data=>{
+       
+       alert(data)
+     }, err=>{
+       alert(err)
+     }
+   )
 
  }
 }
