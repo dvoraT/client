@@ -16,13 +16,17 @@ newUser:User=new User();
 
   public addNewUser(newUser:User)
   { debugger
-        alert('kk')
+        // alert('kk')
 
     // this.userService.signUp(7).subscribe(u=>{
-    this.userService.signUp(this.newUser).subscribe(u=>{
+    // this.userService.signUp(this.newUser).subscribe(u=>{
 
-      alert(u)
-    });
+    //   alert(u)
+    // });
+
+    this.userService.signUp(this.newUser).subscribe(data=>{console.log("נוסף למערכת")}, err=>{"שגיאה"});
   }
 
 }
+
+

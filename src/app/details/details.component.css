@@ -1,13 +1,26 @@
 
-
-.form_container{
-    height: 500px;
-    width: 90%;
-    background-color: aqua;
-    /* display: flex; */
+.text_contain{
+    direction: rtl;
+    margin-top: 3px;
 }
+.form__field{
+    direction: rtl;
+    background-color: #feab69;
+    border:none;
+    margin-right: 20px;
+}
+h1{
+    font-weight: bold;
+    color:rgb(16, 9, 102);
+    direction: rtl;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.update{
+      
+        color: white;
+        border-radius: 50px;
+        background-color: rgb(16, 9, 102);
+   
 
-.form-control{
-    width: 60%;
-    
 }

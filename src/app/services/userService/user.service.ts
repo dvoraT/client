@@ -27,6 +27,9 @@ export class UserService {
   public signUp(newUser:User):Observable<boolean>{
    debugger
     //איזה סוג יחזור מהשרת
-   return this.http.put<boolean>(this.url+'/addUser',newUser);
+  //  return this.http.put<boolean>(this.url+'/addUser',newUser);
+
+  return this.http.put<boolean>(this.url+'/addUser',newUser);
+
  }
 }
