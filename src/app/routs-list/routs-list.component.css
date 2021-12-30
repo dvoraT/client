@@ -1,35 +1,38 @@
-
-
+.contain1{
+    border-style: solid;
+    border-color: silver;
+    background-color: rgb(227, 236, 241);
+    width: 450px;
+    height: 75px;
+    margin-top: 25px;
+    margin-left: 25px ;
+    margin-right: 25px;
+    direction: rtl;
+}
 .myTitle{
-    /* width: 500px;
-    height: 75px; */
-    background-color: rgb(229, 234, 241);
-    /* margin-top: 600px; */
-    color:rgb(16, 9, 102);font-weight: bold;
+    color:rgb(16, 9, 102);
+    font-weight: bold;
+    padding: 5px;
+}
+.contain2{
+    border-style: solid;
+    border-color: silver;
+    background-color: rgb(227, 236, 241);
+    width: 450px;
+    height: 450px;
+    margin-top: 25px;
+    margin-left: 25px ;
+    margin-right: 25px;
+    direction: rtl;
 }
 .myBody{
-    border-width: 6px;
-    width: 500px;
-     background-color: rgb(229, 234, 241);
-     font-weight: bold;
-     margin-left: 5px;
+    color:rgb(16, 9, 102);
 }
-.plus{
-    border-radius: 60px;
-    background-color: rgb(16, 9, 102);
-    margin-top: 20px;
-}
-.icon{
-    border:none;
+.more{
+    width: 30px;
+    height: 30px;
     background-color: #feab69;
-}
-.tabel1{
-    width: 500px;
-    height: 500px;
-    margin-top: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    direction:rtl;
-    border-width: 3px;
-    border-color: black;
+    font-weight: bold;
+    border-color: none;
+    margin-left: 150px;
 }

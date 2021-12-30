@@ -3,12 +3,18 @@ h1{
     color:rgb(16, 9, 102);
     font-size: large;
 }
+h3{
+    color:rgb(16, 9, 102);
+    float: left;
+    padding: 3px;
+}
 .asaid{
+    border-radius:20px;
     background-color: rgb(254,171,105);
     width: 300px;
-    height: 300px;
-    /* margin-top: 50px; */
+    height: 350px;
+    margin-top: -300px;
     margin-left: 400px;
     direction: rtl;
-    padding: 2px;
+    padding: 25px;
 }
