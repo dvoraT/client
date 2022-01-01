@@ -22,10 +22,15 @@ public picUrl="../../assets/pictures/prsonalArea/"+this.currentBackground;
   }
 
   ChangeName(name:string, pic:string){
+
     this.nameToDisplay=name;
     this.currentBackground=pic;
     // this.c_url='../../assets/pictures/prsonalArea/'+this.currentBackground;
     // this.currentBackground=pic;
+  }
+
+  add(){
+    this.nameToDisplay='addDelivery';
   }
 
 }

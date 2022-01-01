@@ -110,3 +110,8 @@ h1{
         align-items: center;
     } */
     
+    .plus{
+        border-radius: 60px;
+        background-color: rgb(16, 9, 102);
+        margin-top: 20px;
+    }

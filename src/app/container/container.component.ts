@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/userService/user.service';
 
 @Component({
   selector: 'app-container',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
+    
+    alert("userId:"+this.userService.currentUserId);
+    
   }
 
 }

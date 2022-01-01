@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from '../services/userService/user.service';
 
 @Component({
@@ -17,7 +18,13 @@ export class SingInComponent implements OnInit {
 
   check(){
     debugger
-this.userService.isUserExist(this.userName,this.password);
+    this.userService.isUserExist(this.userName,this.password);
+    
+  }
+
+  getUserId()
+  { debugger
+    this.userService.getUserId(this.userName,this.password);
   }
 
 }

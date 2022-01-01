@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/classes/User';
 import { UserService } from '../services/userService/user.service';
 
@@ -9,22 +10,20 @@ import { UserService } from '../services/userService/user.service';
 })
 export class SingUpComponent implements OnInit {
 newUser:User=new User();
-  constructor(private userService:UserService) { }
+  constructor(private userService:UserService,private router:Router) { }
 
   ngOnInit(): void{
   }
-
+//הוספת משתמש
   public addNewUser(newUser:User)
   { debugger
-        // alert('kk')
+   
+    this.userService.signUp(this.newUser).subscribe(
+      data=>{
+        console.log("נוסף למערכת");
+        this.router.navigate(['/Home']);
 
-    // this.userService.signUp(7).subscribe(u=>{
-    // this.userService.signUp(this.newUser).subscribe(u=>{
-
-    //   alert(u)
-    // });
-
-    this.userService.signUp(this.newUser).subscribe(data=>{console.log("נוסף למערכת")}, err=>{"שגיאה"});
+      }, err=>{"שגיאה"});
   }
 
 }

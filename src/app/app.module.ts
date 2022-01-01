@@ -29,6 +29,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { ClientRecommendationsComponent } from './client-recommendations/client-recommendations.component';
 import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
 import { FormsModule } from '@angular/forms';
+import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
 // import { RecommendationsComponent } from './recommendations/recommendations.component';
 @NgModule({
   declarations: [
@@ -76,6 +77,8 @@ import { FormsModule } from '@angular/forms';
     ClientRecommendationsComponent,
 
     DeliveryDetailsComponent,
+
+    AddDeliveryComponent,
 
     // RecommendationsComponent
   ],
