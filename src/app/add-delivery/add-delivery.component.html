@@ -1,0 +1,28 @@
+<h1 style="text-align: center;">הכנס פרטי שליח</h1>
+
+<div class="text_contain">
+   
+    <h1>שם פרטי</h1>
+    <input  type="text" class="form__field" placeholder="שם פרטי " name="f_name" [(ngModel)]="newDelivery.f_name" />
+    <label  class="form__label"> </label>
+    
+    <h1>שם משפחה</h1>
+    <input  type="text" class="form__field" placeholder="שם משפחה" name="l_name" [(ngModel)]="newDelivery.l_name"/>
+    <label  class="form__label"> </label>
+   
+    <h1>פלאפון</h1>
+    <input  type="text" class="form__field" placeholder=" פלאפון"  name="phone" [(ngModel)]="newDelivery.phone" />
+    <label  class="form__label"> </label>
+    
+    <h1>שעות עבודה</h1>
+    <input  type="number" class="form__field" placeholder="שעות עבודה"  name="num_hours" [(ngModel)]="newDelivery.num_hours" />
+    <label  class="form__label"> </label>
+    
+    <h1>מייל</h1>
+    <input  type="text" class="form__field" placeholder="מייל"   name="email" [(ngModel)]="newDelivery.email"/>
+    <label  class="form__label"> </label>
+    
+   
+
+</div>
+<button (click)="add()">הוסף שליח</button>
