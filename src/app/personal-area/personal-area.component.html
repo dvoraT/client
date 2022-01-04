@@ -128,15 +128,15 @@
 
 
             <button class="button" (click)="ChangeName('newOrder','pic5.jpg')"
-              [ngClass]="nameToDisplay == 'newOrder' ? 'active' : 'button'">יצירת הזמנה חדשה</button>
+              [ngClass]="this.paService.nameToDisplay == 'newOrder' ? 'active' : 'button'">יצירת הזמנה חדשה</button>
             <button class="button" (click)="ChangeName('deliveries','pic4.jpg')"
-              [ngClass]="nameToDisplay == 'deliveries' ? 'active' : 'button'">שליחים</button>
+              [ngClass]="this.paService.nameToDisplay == 'deliveries' ? 'active' : 'button'">שליחים</button>
             <button class="button" (click)="ChangeName('routsList','pic3.jpg')"
-              [ngClass]="nameToDisplay == 'routsList' ? 'active' : 'button'">תצוגת מסלולים</button>
+              [ngClass]="this.paService.nameToDisplay == 'routsList' ? 'active' : 'button'">תצוגת מסלולים</button>
             <button class="button" (click)="ChangeName('orderList','pic2.jpg')"
-              [ngClass]="nameToDisplay == 'orderList' ? 'active' : 'button'">תצוגת הזמנות</button>
+              [ngClass]="this.paService.nameToDisplay == 'orderList' ? 'active' : 'button'">תצוגת הזמנות</button>
             <button class="button" (click)="ChangeName('details','pic1.jpg')"
-              [ngClass]="nameToDisplay == 'details' ? 'active' : 'button'">פרטים אישיים</button>
+              [ngClass]="this.paService.nameToDisplay == 'details' ? 'active' : 'button'">פרטים אישיים</button>
 
 
 
@@ -144,24 +144,22 @@
         </div>
       </div>
 
-
-
       <div class="c_contain">
 
-        <div *ngIf="nameToDisplay=='details'" class="detaileC_contain">
+        <div *ngIf="this.paService.nameToDisplay=='details'" class="detaileC_contain">
           <app-details></app-details>
         </div>
 
-        <div *ngIf="nameToDisplay=='orderList'">
+        <div *ngIf="this.paService.nameToDisplay=='orderList'">
           <app-order-list></app-order-list>
         </div>
 
-        <div *ngIf="nameToDisplay=='routsList'">
+        <div *ngIf="this.paService.nameToDisplay=='routsList'">
           <app-routs-list></app-routs-list>
         </div>
 
     
-    <div *ngIf="nameToDisplay=='deliveries'"  >
+    <div *ngIf="this.paService.nameToDisplay=='deliveries'"  >
           <app-deliveries-list></app-deliveries-list>
           <button class="plus" (click)="add()"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
             class="bi bi-plus" viewBox="0 0 16 16" style="color: white;">
@@ -171,11 +169,11 @@
           
         </div>
 
-        <div *ngIf="nameToDisplay=='addDelivery'">
+        <div *ngIf="this.paService.nameToDisplay=='addDelivery'">
         <app-add-delivery></app-add-delivery>
         </div>
 
-        <div *ngIf="nameToDisplay=='newOrder'">
+        <div *ngIf="this.paService.nameToDisplay=='newOrder'">
           <app-new-order></app-new-order>
         </div>
 

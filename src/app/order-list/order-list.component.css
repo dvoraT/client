@@ -6,17 +6,17 @@
     border-color: black;
     background-color: rgb(229, 234, 241);
 } */
-.myTitle{
-    /* width: 500px;
-    height: 75px; */
+/* .myTitle{
+    width: 500px;
+    height: 75px;
     background-color: rgb(229, 234, 241);
-    /* margin-top: 600px; */
+    margin-top: 600px;
     color:rgb(16, 9, 102);
     font-weight: bold;
     padding: 5px;
     
-}
-.myBody{
+} */
+/* .myBody{
     width: 500px;
      background-color: rgb(229, 234, 241);
      font-weight: bold;
@@ -29,10 +29,10 @@
 .icon{
     border:none;
     background-color: #feab69;
-    /* margin-left:3px ; */
-    /* margin-top: -500px; */
-}
-.tabel1{
+    margin-left:3px ;
+    margin-top: -500px;
+} */
+/* .tabel1{
     width: 500px;
     height: 750px;
     margin-top: 30px;
@@ -42,4 +42,47 @@
     border-color: black;
     border: 30px;
     border: black;
+} */
+
+
+.myBody{
+    /* width: 500px; */
+     /* background-color: rgb(229, 234, 241); */
+     /* direction: rtl; */
+     background: transparent;
+     /* font-weight: bold; */
+     /* margin-right: 100px; */
+} 
+.plus{
+    border-radius: 60px;
+    background-color: rgb(16, 9, 102);
+    margin-top: 20px;
+}
+
+
+ .contain_items{
+    background-color: rgb(226, 233, 252);
+    width: 94%;
+    height: 300px;
+    margin-left: 3%;
+    margin-top: 10%;
+
+} 
+
+
+button{
+    display: none;
+    height: 29px;
+    width: 29px;
+    border-radius: 60px;
+    background-color: rgb(16, 9, 102);
+    color: white;
+}
+
+.active{
+    display: block;
+}
+thead{
+    /* font-size:x-large; */
+    font-weight: bold;
 }

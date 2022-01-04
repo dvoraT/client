@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { HttpClient, JsonpClientBackend } from '@angular/common/http';
+import { Injectable, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { promise } from 'protractor';
 import { Observable } from 'rxjs';
@@ -10,11 +10,16 @@ import { User } from 'src/classes/User';
 })
 export class UserService {
   url:string="http://localhost:61249/api/Users"
-  answer:boolean;
+  // answer:boolean;
+  userName:string;
+  password:string;
+  a:any
+  currentUser:User = new User();
   public currentUserId:number;
   constructor(private http:HttpClient, private router:Router) {
 
    }
+
 
    public signIn(url:string, user:User):Observable<any>{
      return this.http.post<any>(this.url,user);
@@ -32,10 +37,10 @@ export class UserService {
  }
 
 // פונקציה לצורך קבלת היוזר הנוכחי שמחובר כעת
- getUserId(userName:string,password:string):any
+ getUserId():any
  {
    debugger
-  this.http.get<number>(this.url+"/getUserId/"+userName+"/"+password).subscribe(
+  this.http.get<number>(this.url+"/getUserId/"+this.currentUser.user_name+"/"+this.currentUser.user_password).subscribe(
     data=>{
       this.currentUserId=data;
       alert("the current user id is:"+this.currentUserId);
@@ -44,18 +49,19 @@ export class UserService {
  }
 
 //בדיקה האם המשתמש רשום למערכת
- isUserExist(userName:string,password:string){
-  
-   this.http.get<boolean>(this.url+"/isUserExist/"+userName+"/"+password).subscribe(
+ isUserExist(){
+  alert(this.url+"/isUserExist/"+this.currentUser.user_name+"/"+this.currentUser.user_password)
+   this.http.get<User>(this.url+"/isUserExist/"+this.currentUser.user_name+"/"+this.currentUser.user_password).subscribe(
      data=>{
-       if(data==true)
+       debugger
+       if(data!=undefined)
        {
-          alert("שלום ל: "+ userName);
+        sessionStorage.setItem("currentUser",JSON.stringify(data))
+          alert("שלום ל: "+ this.currentUser.user_name);
           debugger
           this.router.navigate(['/HomePage'])
-
           //הגדרת הקוד של היוזר  הנוכחי
-          this.currentUserId=this.getUserId(userName,password);
+          //this.currentUserId=this.getUserId();
        }
        
        else
@@ -67,6 +73,13 @@ export class UserService {
      
    )
 
+ }
+
+ getDetails():Observable<User>
+ {
+   if(!this.currentUser.id) alert("אין משתמשמחובר")
+   debugger
+   return this.http.get<User>(this.url+"/getUserDetails/"+this.currentUser.id);
  }
 
  

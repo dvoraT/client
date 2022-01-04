@@ -5,6 +5,19 @@
             <input class="form-control">
             <h1>כתובת</h1>
             <input class="form-control">
+            <!-- <section class="item">
+                <input class="input" type="search" placeholder="מוצא" ngx-google-places-autocomplete [options]='options'
+                  id="Exported" [ngClass]="{'invalid':Exported_invalid==true}" (keyup)="validExported()" #placesRef="ngx-places"
+                  (onAddressChange)="handleAddressChange($event,'מוצא')">
+                <input type="text" id="Exported" #search1 [formControl]="searchControl1" autocomplete="off" autocapitalize="off"
+                  spellcheck="off" class="input" placeholder="מוצא" [ngClass]="{'invalid':Exported_invalid==true}"
+                  (keyup)="validExported()">
+                <div style="float: right; text-align: center;" *ngIf="Exported_invalid==true">
+                  <b style="color: red; ">{{error_messege_Exported}}</b>
+                  <img style="margin-left: 5px;" src="../../assets/images/error.png" />
+                </div>
+              </section>‏ -->
+          
             <h1>טלפון</h1>
             <input class="form-control">             
             <h1>מייל</h1>
