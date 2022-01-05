@@ -8,23 +8,21 @@ import { UserService } from '../services/userService/user.service';
   styleUrls: ['./sing-in.component.css']
 })
 export class SingInComponent implements OnInit {
-  userName:""
-  password:""
   constructor(public userService:UserService) { }
 
   
   ngOnInit(): void {
   }
 
-  check(){
+  signIn(){
     debugger
-    this.userService.isUserExist(this.userName,this.password);
+    this.userService.isUserExist();
     
   }
 
   getUserId()
   { debugger
-    this.userService.getUserId(this.userName,this.password);
+    this.userService.getUserId();
   }
 
 }

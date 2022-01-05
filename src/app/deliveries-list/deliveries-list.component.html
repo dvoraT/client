@@ -249,9 +249,8 @@
 
 
 
-
     <td>
-        <button class="icon" [ngClass]="currentDelivery=='act'&& currentId==item.id? 'active':'button'">
+        <button class="icon" [ngClass]="currentDelivery=='act'&& currentId==item.id? 'active':'button'" (click)=" update()" >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill"
                 viewBox="0 0 16 16">
                 <path
@@ -261,7 +260,7 @@
     </td>
     <td>
         
-        <button class="icon" [ngClass]="currentDelivery=='act'&& currentId==item.id? 'active':'button'">
+        <button class="icon" [ngClass]="currentDelivery=='act'&& currentId==item.id? 'active':'button'" (click)="delete(item.id)">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="currentColor" class="bi bi-trash"
                 viewBox="0 0 16 16">
                 <path
@@ -281,6 +280,7 @@
 
 
 </div>
+
 
 
 

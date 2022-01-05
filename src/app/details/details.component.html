@@ -26,34 +26,43 @@
 
             </form>
     </div> -->
+
+    public id?:number,
+    public route_id?:number,
+    public user_name?:string,
+    public user_password?:string,
+    public name?:string,
+    public address?:string,
+    public phone?:string,
+    public email?:string
     <div class="text_contain">
 
       <h1>שם משתמש</h1>
-      <input  type="text" class="form__field" placeholder="שם " />
+      <input  type="text" class="form__field" placeholder="שם משתמש" name="user_name" [(ngModel)]="userService.currentUser.user_name"  />
       <label  class="form__label"> </label>
       
       <h1>סיסמא</h1>
-      <input  type="text" class="form__field" placeholder="סיסמא"/>
+      <input  type="text" class="form__field" placeholder="סיסמא" name="user_password" [(ngModel)]="userService.currentUser.user_password"/>
       <label  class="form__label"> </label>
      
       <h1>שם העסק</h1>
-      <input  type="text" class="form__field" placeholder="שם העסק" />
+      <input  type="text" class="form__field" placeholder="שם העסק" name="name"  [(ngModel)]="userService.currentUser.name" />
       <label  class="form__label"> </label>
       
       <h1>כתובת</h1>
-      <input  type="text" class="form__field" placeholder="כתובת" />
+      <input  type="text" class="form__field" placeholder="כתובת" name="address" [(ngModel)]="userService.currentUser.address" />
       <label  class="form__label"> </label>
       
       <h1>ח.פ</h1>
-      <input  type="text" class="form__field" placeholder="ח.פ" />
+      <input  type="number" class="form__field" placeholder="ח.פ" name="id" [(ngModel)]="userService.currentUser.id"/>
       <label  class="form__label"> </label>
       
       <h1>טלפון</h1>
-      <input  type="text" class="form__field" placeholder="טלפון"/>
+      <input  type="text" class="form__field" placeholder="טלפון" name="phone" [(ngModel)]="userService.currentUser.phone"/>
       <label  class="form__label"> </label>
       
       <h1>מייל</h1>
-      <input  type="text" class="form__field" placeholder="מייל"/>
+      <input  type="text" class="form__field" placeholder="מייל" name="email" [(ngModel)]="userService.currentUser.email"/>
       <label  class="form__label"> </label>
       <button class="update">עדכון</button>
      <button class="under"></button>

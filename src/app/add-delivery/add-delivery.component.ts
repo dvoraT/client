@@ -13,11 +13,21 @@ public newDelivery=new Delivery();
   constructor(public deliveryService:DeliveryService,public userService:UserService) { }
 
   ngOnInit(): void {
+    if(this.deliveryService.isEdit==true)
+    {
+      this.deliveryService.getDeliveryById().subscribe(
+        data=>{
+          this.newDelivery=data;
+        }
+      )
+      
+    }
   }
 
   add(){
     debugger
-    // this.newDelivery.user_id=this.userService.
+  if(this.deliveryService.isEdit==false)
+  {
     if(this.userService.currentUserId==null)
     {
       alert("אינך מחובר!! עליך להתחבר למערכת לפני הוספת שליח")
@@ -30,7 +40,27 @@ public newDelivery=new Delivery();
       else
       alert("השליח לא נוסף למערכת")
     })
+    }
   }
+  else
+  {
+    debugger
+    
+    this.deliveryService.updateDelivery(this.newDelivery).subscribe(
+      data=>{console.log("suc")},
+      err=>{}
+      
+    )
+    this.deliveryService.isEdit=false;
+    this.newDelivery=new Delivery();
+
+
+  }
+
+
 }
+
+
+
 
 }
