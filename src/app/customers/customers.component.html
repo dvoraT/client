@@ -1,0 +1,26 @@
+<div class="contain1">
+    <table class="table">
+        <thead class="myTitle">
+            <tr>
+                <th>קוד לקוח</th>
+                <th>שם לקוח</th>
+                <th>כתובת</th>
+                <th>טלפון</th>
+                <th>מייל</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="contain2">
+    <table class="table">
+        <tbody class="myBody">
+            <tr *ngFor="let item of listCustomers" (click)="changeStatus(item.id)">
+            <td>{{item.id}}</td>
+            <td >{{item.f_name}} {{item.l_name}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.phone}}</td>
+            <td>{{item.email}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

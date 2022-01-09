@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 .contain1{
     border-style: solid;
     border-color: silver;
@@ -29,7 +29,7 @@
 }
 .myBody{
     color:rgb(16, 9, 102);
-=======
+}
 /* .myBorder{
     margin-top: -20px;
     width: 500px;
@@ -51,7 +51,7 @@
     width: 500px;
      background-color: rgb(229, 234, 241);
      font-weight: bold;
->>>>>>> 219b901a914e3acae7c9d96ef045c25601c3dd7f
+
 }
 .more{
     width: 30px;
@@ -126,5 +126,5 @@ button{
 thead{
     /* font-size:x-large; */
     font-weight: bold;
->>>>>>> 219b901a914e3acae7c9d96ef045c25601c3dd7f
+
 }

@@ -30,6 +30,7 @@ import { ClientRecommendationsComponent } from './client-recommendations/client-
 import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
 import { FormsModule } from '@angular/forms';
 import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
+import { CustomersComponent } from './customers/customers.component';
 // import { RecommendationsComponent } from './recommendations/recommendations.component';
 @NgModule({
   declarations: [
@@ -79,6 +80,8 @@ import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
     DeliveryDetailsComponent,
 
     AddDeliveryComponent,
+
+    CustomersComponent,
 
     // RecommendationsComponent
   ],
