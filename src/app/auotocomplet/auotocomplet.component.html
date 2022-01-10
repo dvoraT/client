@@ -1,0 +1,9 @@
+<p>auotocomplet works!</p>
+
+
+<input  type="text" #addresstext style="margin-top: 200px;">
+<div #gmap style="width:600px;height:450px; background-color: aqua;">
+</div>
+<agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="OnChoseLocation($event)">
+
+</agm-map>

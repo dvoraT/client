@@ -128,7 +128,7 @@
 
 
             <button class="button" (click)="ChangeName('newOrder','pic5.jpg')"
-              [ngClass]="this.paService.nameToDisplay == 'newOrder' ? 'active' : 'button'">יצירת הזמנה חדשה</button>
+              [ngClass]="this.paService.nameToDisplay == 'newOrder' ? 'active' : 'button'">הזמנה חדשה</button>
             <button class="button" (click)="ChangeName('deliveries','pic4.jpg')"
               [ngClass]="this.paService.nameToDisplay == 'deliveries' ? 'active' : 'button'">שליחים</button>
             <button class="button" (click)="ChangeName('routsList','pic3.jpg')"
@@ -172,6 +172,12 @@
         <div *ngIf="this.paService.nameToDisplay=='addDelivery'">
         <app-add-delivery></app-add-delivery>
         </div>
+
+
+        <!-- <div *ngIf="this.paService.nameToDisplay=='addCustomer'">
+          <app-new-customer></app-new-customer>
+
+        </div> -->
 
         <div *ngIf="this.paService.nameToDisplay=='newOrder'">
           <app-new-order></app-new-order>

@@ -1,20 +1,23 @@
 
 .text_contain{
     direction: rtl;
-    margin-top: 3px;
+    margin-top:6%;
+    /* background-color: aqua; */
+    margin-right: 3%;
 }
 .form__field{
     direction: rtl;
     background-color: #feab69;
     border:none;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 h1{
     font-weight: bold;
     color:rgb(16, 9, 102);
     direction: rtl;
-    margin-right: 20px;
-    margin-top: 5px;
+    margin-right: 2%;
+    margin-top: 20px;
+    margin-bottom: 1px;
 }
 .update{
     background-color: #feab69;
@@ -34,4 +37,9 @@ h1{
     margin-right: 430px;
     margin-top: -50px;
     opacity: 0.5 !important;
+}
+input{
+    color:rgb(16, 9, 102) ;
+    /* direction: rtl; */
+    /* margin-right: 20px; */
 }

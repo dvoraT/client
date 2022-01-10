@@ -1,6 +1,6 @@
-.form-control{
+/* .form-control{
     background-color: #feab69;
-    /* border-color: whitesmoke; */
+    border-color: whitesmoke;
     direction: rtl;
     margin-left: 350px;
     width: 200px;
@@ -21,5 +21,34 @@ h1{
     width: 15%;
     height: 35px;
     position: relative;
-    /* margin-top: 900px; */
+    margin-top: 900px;
+} */
+
+.text_contain{
+    direction: rtl;
+    margin-top: 3px;
+}
+.form__field{
+    direction: rtl;
+    background-color: #feab69;
+    border:none;
+    margin-right: 20px;
+}
+h1{
+    font-weight: bold;
+    color:rgb(16, 9, 102);
+    direction: rtl;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+button{
+    background-color:rgb(16, 9, 102);
+    border: transparent;
+    border-radius:20px;
+    color: white;
+    margin-left: 43%;
+    margin-top: 2%;
+    width: 120px;
+    height: 35px;
 }

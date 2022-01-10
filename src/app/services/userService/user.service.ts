@@ -50,16 +50,18 @@ export class UserService {
 
 //בדיקה האם המשתמש רשום למערכת
  isUserExist(){
-  alert(this.url+"/isUserExist/"+this.currentUser.user_name+"/"+this.currentUser.user_password)
+  // alert(this.url+"/isUserExist/"+this.currentUser.user_name+"/"+this.currentUser.user_password)
    this.http.get<User>(this.url+"/isUserExist/"+this.currentUser.user_name+"/"+this.currentUser.user_password).subscribe(
      data=>{
        debugger
        if(data!=undefined)
        {
-        sessionStorage.setItem("currentUser",JSON.stringify(data))
+        debugger
+        sessionStorage.setItem("currentUser",JSON.stringify(data));
+        this.currentUser=data;
           alert("שלום ל: "+ this.currentUser.user_name);
           debugger
-          this.router.navigate(['/HomePage'])
+          this.router.navigate(['/PersonalArea'])
           //הגדרת הקוד של היוזר  הנוכחי
           //this.currentUserId=this.getUserId();
        }
@@ -77,7 +79,7 @@ export class UserService {
 
  getDetails():Observable<User>
  {
-   if(!this.currentUser.id) alert("אין משתמשמחובר")
+  //  if(!this.currentUser.id) alert("אין משתמשמחובר")
    debugger
    return this.http.get<User>(this.url+"/getUserDetails/"+this.currentUser.id);
  }

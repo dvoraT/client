@@ -13,12 +13,17 @@ export class DetailsComponent implements OnInit {
   constructor(public userService: UserService) { }
 
   ngOnInit(): void {
-    this.currentUser = JSON.parse(sessionStorage.getItem("currentUser"))
-    this.currentUser = this.userService.currentUser;
+    
+    // this.currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
+    // this.currentUser = this.userService.currentUser;
+    this.userService.currentUser= JSON.parse(sessionStorage.getItem('currentUser'));
+    
+    debugger
     this.userService.getDetails().subscribe(
       data => { this.currentUser = data },
       err => { }
     )
+    debugger
   }
   // public UpdateDetails(update:User){
   //   // פונקציה המעדכנת פרטים, צריך לעשות אותה

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
+import { AuotocompletComponent } from './auotocomplet/auotocomplet.component';
 import { ClientRecommendationsComponent } from './client-recommendations/client-recommendations.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContainerComponent } from './container/container.component';
@@ -53,7 +54,9 @@ const routes: Routes = [
 
     {path:"ListPackages", component:ListPackagesComponent},
     {path:"ShowRout",component:ShowRoutComponent},
-    {path:"addOrEditDelivery",component:AddDeliveryComponent}
+    {path:"addOrEditDelivery",component:AddDeliveryComponent},
+
+    {path:"app-auotocomplet",component:AuotocompletComponent}
 
 
 

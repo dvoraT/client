@@ -11,7 +11,7 @@ import { UserService } from './userService/user.service';
 export class DeliveryService {
   url:string="http://localhost:61249/api/Deliveries";
   currentIdDelivery:number=0;
-  isEdit:boolean;
+  isEdit:boolean= false;
   a:number=1;
   constructor(private http:HttpClient, private userService:UserService) { }
 

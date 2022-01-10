@@ -28,12 +28,12 @@ public newDelivery=new Delivery();
     debugger
   if(this.deliveryService.isEdit==false)
   {
-    if(this.userService.currentUserId==null)
+    if(this.userService.currentUser.id==null)
     {
       alert("אינך מחובר!! עליך להתחבר למערכת לפני הוספת שליח")
     }
     else{
-    this.newDelivery.user_id=this.userService.currentUserId;
+    this.newDelivery.user_id=this.userService.currentUser.id;
     this.deliveryService.addDelivery(this.newDelivery).subscribe(data=>{
       if(data==true)
       alert("השליח "+ this.newDelivery.f_name+" "+this.newDelivery.l_name+" נוסף למערכת");

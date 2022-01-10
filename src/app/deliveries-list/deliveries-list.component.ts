@@ -12,16 +12,19 @@ import { UserService } from '../services/userService/user.service';
 export class DeliveriesListComponent implements OnInit {
 public currentDelivery="";
 public currentId=0;
+num=1;
 listDelivery:Array<Delivery>=new Array<Delivery>()
   constructor(private deliveryService:DeliveryService, private userSrvice:UserService,private paSrvice:PersonalAereaService) { }
 
   
   ngOnInit(): void {
+debugger
 
     this.deliveryService.getDeliveriesByUserId().subscribe(
       data=>{this.listDelivery=data},
       err=>{console.log("err")}
     )
+
   }
   add(){
     

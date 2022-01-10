@@ -1,7 +1,7 @@
 export class User{
     constructor(
         public id?:number,
-        public route_id?:number,
+        // public route_id?:number,
         public user_name?:string,
         public user_password?:string,
         public name?:string,

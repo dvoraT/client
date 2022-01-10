@@ -30,6 +30,9 @@ import { ClientRecommendationsComponent } from './client-recommendations/client-
 import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
 import { FormsModule } from '@angular/forms';
 import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
+import { AuotocompletComponent } from './auotocomplet/auotocomplet.component';
+import { AgmCoreModule } from '@agm/core';
+
 // import { RecommendationsComponent } from './recommendations/recommendations.component';
 @NgModule({
   declarations: [
@@ -80,6 +83,10 @@ import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
 
     AddDeliveryComponent,
 
+    AuotocompletComponent,
+
+    
+
     // RecommendationsComponent
   ],
   imports: [
@@ -88,7 +95,10 @@ import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
     NoopAnimationsModule,
     MatIconModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyAV4YjYQCrkbS5xVCVufsbLrIMYVr4HHMA'
+    })
 
   ],
   providers: [],
