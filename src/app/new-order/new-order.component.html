@@ -29,39 +29,25 @@
 </div>
 
 </div> -->
-<h1 style="text-align: center;">יצירת הזמנה חדשה</h1>
+<h1 style="text-align: center;">הכנס פרטי הזמנה:</h1>
 
 <div class="text_contain">
    
-    <h1>שם פרטי</h1>
-    <input  type="text" class="form__field" placeholder="שם פרטי " name="f_name" [(ngModel)]="newCustomer.f_name" />
+    <h1>סטטוס</h1>
+    <input  type="text" class="form__field"  name="oredr_status" [(ngModel)]="newOrder.oredr_status" />
     <label  class="form__label"> </label>
     
-    <h1>שם משפחה</h1>
-    <input  type="text" class="form__field" placeholder="שם משפחה" name="l_name" [(ngModel)]="newCustomer.l_name"/>
+    <h1>תאריך יצירת הזמנה</h1>
+    <input  type="datetime-local" class="form__field"  name="creation_date" [(ngModel)]="newOrder.creation_date"/>
     <label  class="form__label"> </label>
 
-    <h1>כתובת</h1>
-    <input  type="text" class="form__field" placeholder="כתובת"  name="address" [(ngModel)]="newCustomer.address" />
-    <label  class="form__label"> </label>
-   
-    <h1>טלפון</h1>
-    <input  type="text" class="form__field" placeholder=" טלפון"  name="phone" [(ngModel)]="newCustomer.phone" />
-    <label  class="form__label"> </label>
-    
-   
-    
-    <h1>מייל</h1>
-      
-        <input  type="text" class="form__field" placeholder="מייל"   name="email" [(ngModel)]="newCustomer.email"/>
-    <label  class="form__label"> </label>
 
     <h1>מועד אחרון</h1>
     <input  type="datetime-local" class="form__field" placeholder="מועד אחרון"   name="deadline_date" [(ngModel)]="newOrder.deadline_date"/>
     <label  class="form__label"> </label>
 
-    <h1>כמות חבילות</h1>
-    <input  type="number" class="form__field" placeholder="כמות חבילות"   name="boxes_amount" [(ngModel)]="newOrder.boxes_amount"/>
+    <h1>מספר חבילות</h1>
+    <input  type="number" class="form__field" placeholder="הכנס מספר חבילות"   name="boxes_amount" [(ngModel)]="newOrder.boxes_amount"/>
     <label  class="form__label"> </label>
     
    

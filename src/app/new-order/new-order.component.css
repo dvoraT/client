@@ -30,7 +30,8 @@ h1{
 }
 .form__field{
     direction: rtl;
-    background-color: #feab69;
+    /* background-color: #ffc392; */
+    background: transparent;
     border:none;
     margin-right: 20px;
 }

@@ -6,6 +6,9 @@ import{Order} from '../../classes/Order';
 import { PersonalAereaService } from '../services/personal-aerea.service';
 import { Customer } from 'src/classes/Customer';
 import { OrderService } from '../services/order.service';
+import {formatDate} from '@angular/common';
+
+
 
 @Component({
   selector: 'app-new-order',
@@ -18,6 +21,7 @@ export class NewOrderComponent implements OnInit {
   //הזמנה חדשה
   newOrder:Order=new Order();
   newCustomer:Customer=new Customer();
+ 
 // newDate:Date=new Date();
 
 

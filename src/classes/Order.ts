@@ -9,7 +9,8 @@ export class Order{
         public customer_id?:number,
         public route_id?:number,
         public delivery_id?:number,
-        public user_id?:number
+        public user_id?:number,
+        public creation_date?:Date
 
 
     ){}

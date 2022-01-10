@@ -7,7 +7,8 @@
 }
 .form__field{
     direction: rtl;
-    background-color: #feab69;
+    /* background-color: #feab69; */
+    background: transparent;
     border:none;
     margin-right: 10px;
 }

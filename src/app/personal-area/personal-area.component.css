@@ -29,7 +29,9 @@ h1{
 
 .active {
     font-weight: bold;
-    background-color: #feab69;
+    /* background-color: #feab69; */
+    /* background-color: white;
+    opacity: 0.5; */
     border-radius: 20px;
 }
 
@@ -49,7 +51,12 @@ h1{
 }
 
     .c_contain{
-        background-color: #feab69;
+        /* background-color: #feab69; */
+        /* background-color: white; */
+        /* background-color: rgba(255, 255, 255, 0.5); */
+        /* opacity: 0.5 !important; */
+    background-color: rgba(190, 207, 250, 0.3);
+
          height: 95%;
          width: 100%;
          border-radius: 3%;
