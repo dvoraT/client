@@ -31,6 +31,7 @@ import { DeliveryDetailsComponent } from './delivery-details/delivery-details.co
 import { FormsModule } from '@angular/forms';
 import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
 import { CustomersComponent } from './customers/customers.component';
+import { AddCustomerComponent } from './add-customer/add-customer.component';
 // import { RecommendationsComponent } from './recommendations/recommendations.component';
 @NgModule({
   declarations: [
@@ -82,6 +83,8 @@ import { CustomersComponent } from './customers/customers.component';
     AddDeliveryComponent,
 
     CustomersComponent,
+
+    AddCustomerComponent,
 
     // RecommendationsComponent
   ],

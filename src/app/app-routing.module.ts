@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
 import { ClientRecommendationsComponent } from './client-recommendations/client-recommendations.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContainerComponent } from './container/container.component';
+import { CustomersComponent } from './customers/customers.component';
 import { DeliveriesListComponent } from './deliveries-list/deliveries-list.component';
 import { DeliveryRoutsComponent } from './delivery-routs/delivery-routs.component';
 import { DetailsComponent } from './details/details.component';
@@ -41,8 +43,9 @@ const routes: Routes = [
         {path:"RoutsList", component:RoutsListComponent},
         {path:"DeliveriesList",component:DeliveriesListComponent},
         {path:"NewOrder",component:NewOrderComponent},
+        {path:"Customers",component:CustomersComponent},
       // {path:"PersonalNav",component:PersonalNavComponent, children:[
-        
+        {path:"AddCustomer",component:AddCustomerComponent},
       
     // ]}
 
