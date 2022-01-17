@@ -1,177 +1,66 @@
-<!-- <div class="container">
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>פרטים אישיים</th>
-            <th>תצוגת הזמנות</th>
-            <th>תצוגת מסלולים</th>
-            <th>שליחים</th>
-            <th>יצירת הזמנה חדשה</th>
-            
-        </tr>
-    </thead>
-
-    <tbody>
-
-    <td>jj</td>
-    <td>jj</td>
-    <td>jj</td>
-    <td>jj</td>
-
-    </tbody>
-
-</table>
-</div> -->
-<!-- <img class="w3-image" src="../../assets/pictures/prsonalArea/pic1.jpg" alt="Hamburger Catering" >
-
-<div class="c" >
-<ul class="nav nav-tabs">
-    <li >
-      <a class="nav-link active" href="#" routerLink="/PersonalArea" (click)="ChangeName('newOrder','pic1.jpg')">יצירת הזמנה חדשה</a>
-    </li>
-    <li >
-      <a class="nav-link" href="#"  routerLink="/PersonalArea" (click)="ChangeName('deliveries','pic2.jpg')">שליחים</a>
-    </li>
-    <li >
-      <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('routsList','pic3.jpg')">תצוגת מסלולים</a>
-    </li>
-    <li >
-        <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('orderList','pic4.jpg')">תצוגת הזמנות</a>
-      </li>
-      <li >
-        <a class="nav-link" href="#" routerLink="/PersonalArea" (click)="ChangeName('details', 'pic5.jpg')">פרטים אישיים </a>
-      </li>
-    
-  </ul>
-  <div *ngIf= "nameToDisplay=='details'">
-    <app-details></app-details>
-  </div>
-
-  <div *ngIf= "nameToDisplay=='orderList'">
-    <app-order-list></app-order-list>
-  </div>
-
-  <div *ngIf= "nameToDisplay=='routsList'">
-    <app-routs-list></app-routs-list>
-  </div>
-
-  <div *ngIf= "nameToDisplay=='deliveries'">
-    <app-deliveries-list></app-deliveries-list>
-  </div>
-
-  <div *ngIf= "nameToDisplay=='newOrder'">
-    <app-new-order></app-new-order>
-  </div>
-</div> -->
-<!-- justify-content-center -->
-<!-- d-flex -->
-
-
-
-<!-- <div class="container1"  style="background-image: url();">
-          <img src='../../assets/pictures/prsonalArea/pic1.jpg' width="1600" height="900">
-  <div class="c_contain">
-    <div class="w3-top" class="nav_contain">
-      <div class="w3-bar nav" id="myNavbar" >
-        
-        <button class="button" (click)="ChangeName('newOrder','pic5')" [ngClass]="nameToDisplay == 'newOrder' ? 'active' : 'button'">יצירת הזמנה חדשה</button>
-        <button class="button" (click)="ChangeName('deliveries','pic4')" [ngClass]="nameToDisplay == 'deliveries' ? 'active' : 'button'">שליחים</button>
-        <button class="button" (click)="ChangeName('routsList','pic3')" [ngClass]="nameToDisplay == 'routsList' ? 'active' : 'button'">תצוגת מסלולים</button>
-        <button class="button" (click)="ChangeName('orderList','pic2')" [ngClass]="nameToDisplay == 'orderList' ? 'active' : 'button'">תצוגת הזמנות</button>
-        <button class="button" (click)="ChangeName('details','pic1')" [ngClass]="nameToDisplay == 'details' ? 'active' : 'button'">פרטים אישיים</button>
-        </div>
-      </div>
-
-      <div *ngIf= "nameToDisplay=='details'">
-        <app-details></app-details>
-      </div>
-    
-      <div *ngIf= "nameToDisplay=='orderList'">
-        <app-order-list></app-order-list>
-      </div>
-    
-      <div *ngIf= "nameToDisplay=='routsList'">
-        <app-routs-list></app-routs-list>
-      </div>
-    
-      <div *ngIf= "nameToDisplay=='deliveries'">
-        <app-deliveries-list></app-deliveries-list>
-      </div>
-    
-      <div *ngIf= "nameToDisplay=='newOrder'">
-        <app-new-order></app-new-order>
-      </div>
-    </div>
-    
-
-</div> -->
-
-
-
-
-<!-- <router-outlet></router-outlet> -->
-
-
 <div class="contain1">
 
   <div class="img_contain">
     <img src='../../assets/pictures/prsonalArea/{{currentBackground}}'>
   </div>
   <!-- <div class="contain2" style="background-color:chartreuse;"> -->
-    <div class="itmes_contain">
-      <div class="title">
-        <h1>איזור אישי</h1>
-      </div>
-      <div class="nav_contain">
-        <div class="w3-top" class="nav_contain">
-          <div class="w3-bar nav" id="myNavbar">
+  <div class="itmes_contain">
+    <div class="title">
+      <h1>איזור אישי</h1>
+    </div>
+    <div class="nav_contain">
+      <div class="w3-top" class="nav_contain">
+        <div class="w3-bar nav" id="myNavbar">
+
+          <button class="button" (click)="ChangeName('customers','pic1.jpg')"
+            [ngClass]="this.paService.nameToDisplay == 'customers' ? 'active' : 'button'">לקוחות</button>
+          <button class="button" (click)="ChangeName('newOrder','pic5.jpg')"
+            [ngClass]="this.paService.nameToDisplay == 'newOrder' ? 'active' : 'button'">יצירת הזמנה חדשה</button>
+          <button class="button" (click)="ChangeName('deliveries','pic4.jpg')"
+            [ngClass]="this.paService.nameToDisplay == 'deliveries' ? 'active' : 'button'">שליחים</button>
+          <button class="button" (click)="ChangeName('routsList','pic3.jpg')"
+            [ngClass]="this.paService.nameToDisplay == 'routsList' ? 'active' : 'button'">תצוגת מסלולים</button>
+          <button class="button" (click)="ChangeName('orderList','pic2.jpg')"
+            [ngClass]="this.paService.nameToDisplay == 'orderList' ? 'active' : 'button'">תצוגת הזמנות</button>
+          <button class="button" (click)="ChangeName('details','pic1.jpg')"
+            [ngClass]="this.paService.nameToDisplay == 'details' ? 'active' : 'button'">פרטים אישיים</button>
 
 
-            <button class="button" (click)="ChangeName('newOrder','pic5.jpg')"
-              [ngClass]="this.paService.nameToDisplay == 'newOrder' ? 'active' : 'button'">הזמנה חדשה</button>
-            <button class="button" (click)="ChangeName('deliveries','pic4.jpg')"
-              [ngClass]="this.paService.nameToDisplay == 'deliveries' ? 'active' : 'button'">שליחים</button>
-            <button class="button" (click)="ChangeName('routsList','pic3.jpg')"
-              [ngClass]="this.paService.nameToDisplay == 'routsList' ? 'active' : 'button'">תצוגת מסלולים</button>
-            <button class="button" (click)="ChangeName('orderList','pic2.jpg')"
-              [ngClass]="this.paService.nameToDisplay == 'orderList' ? 'active' : 'button'">תצוגת הזמנות</button>
-            <button class="button" (click)="ChangeName('details','pic1.jpg')"
-              [ngClass]="this.paService.nameToDisplay == 'details' ? 'active' : 'button'">פרטים אישיים</button>
 
 
-
-          </div>
         </div>
       </div>
+    </div>
 
-      <div class="c_contain">
+    <div class="c_contain">
 
-        <div *ngIf="this.paService.nameToDisplay=='details'" class="detaileC_contain">
-          <app-details></app-details>
-        </div>
+      <div *ngIf="this.paService.nameToDisplay=='details'" class="detaileC_contain">
+        <app-details></app-details>
+      </div>
 
-        <div *ngIf="this.paService.nameToDisplay=='orderList'">
-          <app-order-list></app-order-list>
-        </div>
+      <div *ngIf="this.paService.nameToDisplay=='orderList'">
+        <app-order-list></app-order-list>
+      </div>
 
-        <div *ngIf="this.paService.nameToDisplay=='routsList'">
-          <app-routs-list></app-routs-list>
-        </div>
+      <div *ngIf="this.paService.nameToDisplay=='routsList'">
+        <app-routs-list></app-routs-list>
+      </div>
 
-    
-    <div *ngIf="this.paService.nameToDisplay=='deliveries'"  >
-          <app-deliveries-list></app-deliveries-list>
-          <button class="plus" (click)="add()"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
-            class="bi bi-plus" viewBox="0 0 16 16" style="color: white;">
+
+      <div *ngIf="this.paService.nameToDisplay=='deliveries'">
+        <app-deliveries-list></app-deliveries-list>
+        <button class="plus" (click)="addD()"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
+            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16" style="color: white;">
             <path
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-        </svg></button>
-          
-        </div>
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+          </svg></button>
 
-        <div *ngIf="this.paService.nameToDisplay=='addDelivery'">
+      </div>
+
+      <div *ngIf="this.paService.nameToDisplay=='addDelivery'">
         <app-add-delivery></app-add-delivery>
-        </div>
+      </div>
+
 
 
         <!-- <div *ngIf="this.paService.nameToDisplay=='addCustomer'">
@@ -183,12 +72,31 @@
           <app-new-order></app-new-order>
         </div>
 
-        
+
+        <div *ngIf="this.paService.nameToDisplay=='customers'">
+          <app-customers></app-customers>
+          <button class="plus" (click)="addC()"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
+            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16" style="color: white;">
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+          </svg></button>
+        </div>
 
 
-      </div>
+        <div *ngIf="this.paService.nameToDisplay=='addCustomer'">
+          <app-add-customer></app-add-customer>
+        </div>
+
+
+
+
+
+
+
 
     </div>
+
+  </div>
 
   <!-- </div> -->
 

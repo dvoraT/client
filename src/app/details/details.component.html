@@ -27,6 +27,7 @@
             </form>
     </div> -->
 
+
    
     <div class="text_contain">
 
@@ -57,6 +58,6 @@
       <h1>מייל</h1>
       <input  type="text" class="form__field" placeholder="מייל" name="email" [(ngModel)]="userService.currentUser.email"/>
       <label  class="form__label"> </label>
-      <button class="update">עדכון</button>
-     <button class="under"></button>
+      <button class="update" (click)="edit()">עדכון פרטים</button>
+     <!-- <button class="under"></button> -->
 </div>

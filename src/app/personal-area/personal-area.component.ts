@@ -33,8 +33,12 @@ this.paService.nameToDisplay='details';
     // this.currentBackground=pic;
   }
 //משנה את סטטוס שם הקומפוננטה הנוכחית כדי שיוכל להציג אותה.
-  add(){
+  addD(){
     this.paService.nameToDisplay='addDelivery';
+  }
+
+  addC(){
+    this.paService.nameToDisplay='addCustomer'
   }
 
 }

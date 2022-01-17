@@ -1,3 +1,32 @@
+
+.contain1{
+    border-style: solid;
+    border-color: silver;
+    background-color: rgb(227, 236, 241);
+    width: 450px;
+    height: 75px;
+    margin-top: 25px;
+    margin-left: 25px ;
+    margin-right: 25px;
+    direction: rtl;
+}
+.myTitle{
+    color:rgb(16, 9, 102);
+    font-weight: bold;
+    padding: 5px;
+    direction: rtl;
+}
+.contain2{
+    border-style: solid;
+    border-color: silver;
+    background-color: rgb(227, 236, 241);
+    width: 450px;
+    height: 400px;
+    margin-top: 25px;
+    margin-left: 25px ;
+    margin-right: 25px;
+    direction: rtl;
+}
 /* 
 
 .myTitle{
@@ -6,6 +35,7 @@
     background-color: rgb(229, 234, 241);
     margin-top: 600px;
     color:rgb(16, 9, 102);font-weight: bold;
+>>>>>>> 0e5ae20c1993b9c36456cda25ebfacb7dfc65429
 }
 */
 
@@ -36,19 +66,38 @@
 
 
 .myBody{
-    /* width: 500px; */
-     /* background-color: rgb(229, 234, 241); */
-     /* direction: rtl; */
-     background: transparent;
-     /* font-weight: bold; */
-     /* margin-right: 100px; */
-} 
-.plus{
-    border-radius: 60px;
-    background-color: rgb(16, 9, 102);
-    margin-top: 20px;
+
+    color:rgb(16, 9, 102);
+}
+.more{
+    width: 30px;
+    height: 30px;
+    background-color: #feab69;
+    font-weight: bold;
+    border-color: none;
+    margin-left: 150px;
 }
 
+.plus{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(16, 9, 102);
+    border-radius: 50px;
+    border:100px;
+    color:white
+    
+}
+
+.icon{
+    width: 20px;
+    height:20px;
+    background-color: rgb(16, 9, 102);
+    border-radius: 50px;
+    border:100px;
+    color: white;
+    margin-left: 3px;
+    float: left;
+}
 
  .contain_items{
     background-color: rgb(226, 233, 252);
@@ -74,6 +123,7 @@ button{
 
 .active{
     display: block;
+
 }
 thead{
     /* font-size:x-large; */

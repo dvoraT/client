@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ContainerComponent } from './container/container.component';
 import { DeliveriesListComponent } from './deliveries-list/deliveries-list.component';
 import { DeliveryRoutsComponent } from './delivery-routs/delivery-routs.component';
+import { DeliverySingInComponent } from './delivery-sing-in/delivery-sing-in.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { ListPackagesComponent } from './list-packages/list-packages.component';
@@ -20,6 +21,7 @@ import { PersonalNavComponent } from './personal-nav/personal-nav.component';
 // import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { RoutsListComponent } from './routs-list/routs-list.component';
 import { ShowRoutComponent } from './show-rout/show-rout.component';
+import { SingInAsComponent } from './sing-in-as/sing-in-as.component';
 import { SingInComponent } from './sing-in/sing-in.component';
 import { SingUpComponent } from './sing-up/sing-up.component';
 import { StatisticComponent } from './statistic/statistic.component';
@@ -56,7 +58,12 @@ const routes: Routes = [
     {path:"ShowRout",component:ShowRoutComponent},
     {path:"addOrEditDelivery",component:AddDeliveryComponent},
 
-    {path:"app-auotocomplet",component:AuotocompletComponent}
+    {path:"app-auotocomplet",component:AuotocompletComponent},
+
+    {path:"singInAs", component:SingInAsComponent},
+    {path:"deliverySignIn", component:DeliverySingInComponent}
+  
+
 
 
 

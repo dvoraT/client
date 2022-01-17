@@ -44,46 +44,7 @@ export class NewOrderComponent implements OnInit {
   // private NgZone: NgZone, private MapsAPILoader: MapsAPILoader
   constructor(public customerService:CustomerService,private paService:PersonalAereaService, public orderService:OrderService) { }
   ngOnInit() {
-  //   $('[data-toggle="popover"]').popover();
-  //   this.latitude = 31.046051;
-  //   this.longitude = 34.851612;
-  //   this.zoom = 8;
-  //   this.searchControl1 = new FormControl();
-  //   this.searchControl2 = new FormControl();
-  //  // this.setCurrentPosition();
-  //   this.MapsAPILoader.load().then(() => {
-  //     const autocomplete1 = new google.maps.places.Autocomplete(this.searchElementRef1.nativeElement, {
-  //       types: [],
-  //       componentRestrictions: { 'country': 'IL' }
-  //     });
-  //     autocomplete1.addListener('place_changed', () => {
-  //       debugger
-  //       this.NgZone.run(() => {
-  //         const place: google.maps.places.PlaceResult = autocomplete1.getPlace();
-  //         if (place.geometry === undefined || place.geometry === null) {
-  //           return;
-  //         }
-  //         this.Exported = place
-
-  //       });
-  //     });
-  //   });
-  //   this.MapsAPILoader.load().then(() => {
-  //     const autocomplete2 = new google.maps.places.Autocomplete(this.searchElementRef2.nativeElement, {
-  //       types: [],
-  //       componentRestrictions: { 'country': 'IL' }
-  //     });
-  //     autocomplete2.addListener('place_changed', () => {
-  //       debugger
-  //       this.NgZone.run(() => {
-  //         const place: google.maps.places.PlaceResult = autocomplete2.getPlace();
-  //         if (place.geometry === undefined || place.geometry === null) {
-  //           return;
-  //         }
-  //         this.Destination = place
-  //       });
-  //     });
-  //   });
+ 
   }
 
 

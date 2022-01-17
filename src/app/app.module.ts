@@ -30,8 +30,15 @@ import { ClientRecommendationsComponent } from './client-recommendations/client-
 import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
 import { FormsModule } from '@angular/forms';
 import { AddDeliveryComponent } from './add-delivery/add-delivery.component';
+
 import { AuotocompletComponent } from './auotocomplet/auotocomplet.component';
 import { AgmCoreModule } from '@agm/core';
+
+
+import { CustomersComponent } from './customers/customers.component';
+import { AddCustomerComponent } from './add-customer/add-customer.component';
+import { SingInAsComponent } from './sing-in-as/sing-in-as.component';
+import { DeliverySingInComponent } from './delivery-sing-in/delivery-sing-in.component';
 
 // import { RecommendationsComponent } from './recommendations/recommendations.component';
 @NgModule({
@@ -83,9 +90,25 @@ import { AgmCoreModule } from '@agm/core';
 
     AddDeliveryComponent,
 
+
     AuotocompletComponent,
 
     
+
+    CustomersComponent,
+
+    
+
+    AddCustomerComponent,
+
+    
+
+    SingInAsComponent,
+
+    
+
+    DeliverySingInComponent,
+
 
     // RecommendationsComponent
   ],
@@ -96,6 +119,7 @@ import { AgmCoreModule } from '@agm/core';
     MatIconModule,
     FormsModule,
     HttpClientModule,
+   
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyAV4YjYQCrkbS5xVCVufsbLrIMYVr4HHMA'
     })

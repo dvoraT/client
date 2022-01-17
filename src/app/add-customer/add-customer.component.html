@@ -1,0 +1,31 @@
+<h1 style="text-align: center;">הכנס פרטי לקוח:</h1>
+
+<div class="text_contain">
+
+
+   
+    <h1>שם פרטי</h1>
+    <input  type="text" class="form__field" placeholder="שם פרטי"  name="f_name" [(ngModel)]="newCustomer.f_name" />
+    <label  class="form__label"> </label>
+    
+    <h1>שם משפחה</h1>
+    <input  type="text" class="form__field" placeholder="שם משפחה"  name="l_name" [(ngModel)]="newCustomer.l_name"/>
+    <label  class="form__label"> </label>
+
+
+    <h1>כתובת</h1>
+    <input  type="text"  #addresstext class="form__field" placeholder="כתובת"   name="address" [(ngModel)]="newCustomer.address" (click)="getPlaceAutocomplete()"/>
+    <label  class="form__label"> </label>
+
+    <h1>טלפון</h1>
+    <input  type="text" class="form__field" placeholder="טלפון"   name="phone" [(ngModel)]="newCustomer.phone"/>
+    <label  class="form__label"> </label>
+
+    <h1>מייל</h1>
+    <input  type="text" class="form__field" placeholder="מייל"   name="email" [(ngModel)]="newCustomer.email"/>
+    <label  class="form__label"> </label>
+    
+   
+
+</div>
+<button (click)="add()">אישור</button>

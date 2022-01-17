@@ -1,4 +1,35 @@
 
+
+.contain1{
+    border-style: solid;
+    border-color: silver;
+    background-color: rgb(227, 236, 241);
+    width: 450px;
+    height: 75px;
+    margin-top: 25px;
+    margin-left: 25px ;
+    margin-right: 25px;
+    direction: rtl;
+}
+.myTitle{
+    color:rgb(16, 9, 102);
+    font-weight: bold;
+    padding: 5px;
+}
+.contain2{
+    border-style: solid;
+    border-color: silver;
+    background-color: rgb(227, 236, 241);
+    width: 450px;
+    height: 450px;
+    margin-top: 25px;
+    margin-left: 25px ;
+    margin-right: 25px;
+    direction: rtl;
+}
+.myBody{
+    color:rgb(16, 9, 102);
+}
 /* .myBorder{
     margin-top: -20px;
     width: 500px;
@@ -20,13 +51,23 @@
     width: 500px;
      background-color: rgb(229, 234, 241);
      font-weight: bold;
+
 }
-.plus{
-    border-radius: 60px;
-    background-color: rgb(16, 9, 102);
-    margin-top: -500px;
+.more{
+    width: 30px;
+    height: 30px;
+    background-color: #feab69;
+    font-weight: bold;
+    border-color: none;
+    margin-left: 150px;
 }
 .icon{
+<<<<<<< HEAD
+    border-radius: 50px;
+    background-color:rgb(16, 9, 102);
+    width: 50px;
+    height: 50px;
+=======
     border:none;
     background-color: #feab69;
     margin-left:3px ;
@@ -85,4 +126,5 @@ button{
 thead{
     /* font-size:x-large; */
     font-weight: bold;
+
 }

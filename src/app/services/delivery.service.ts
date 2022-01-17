@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { getAllLifecycleHooks } from '@angular/compiler/src/lifecycle_reflector';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Delivery } from 'src/classes/Delivery';
 import { UserService } from './userService/user.service';
@@ -13,7 +14,8 @@ export class DeliveryService {
   currentIdDelivery:number=0;
   isEdit:boolean= false;
   a:number=1;
-  constructor(private http:HttpClient, private userService:UserService) { }
+  currentDelivery:Delivery=new Delivery();
+  constructor(private http:HttpClient, private userService:UserService, private router:Router) { }
 
 
   // שליפת השליחים של היוזר הנוכחי
@@ -43,6 +45,25 @@ export class DeliveryService {
 
   }
 
+  isExist(phoneNumber:string){
+    debugger
+    return this.http.get<Delivery>(this.url+"/isExist"+phoneNumber).subscribe(
+      data=>{
+        if(data!=undefined)
+        {
+         debugger
+         sessionStorage.setItem("currentDelivery",JSON.stringify(data));
+         this.currentDelivery=data;
+           alert("שלום ל: "+ this.currentDelivery.f_name);
+           debugger
+           this.router.navigate(['/DeliveryRouts'])
+           //הגדרת הקוד של היוזר  הנוכחי
+           //this.currentUserId=this.getUserId();
+           debugger
+        }
 
+      }
+    );
+  }
  
 }

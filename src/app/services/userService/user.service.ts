@@ -76,7 +76,7 @@ export class UserService {
    )
 
  }
-
+//שליפת פרטים
  getDetails():Observable<User>
  {
   //  if(!this.currentUser.id) alert("אין משתמשמחובר")
@@ -84,6 +84,9 @@ export class UserService {
    return this.http.get<User>(this.url+"/getUserDetails/"+this.currentUser.id);
  }
 
- 
+ //עריכת פרטים
+ edit(user:User){
+   return this.http.post<User>(this.url+"/edit", user);
+ }
 
 }

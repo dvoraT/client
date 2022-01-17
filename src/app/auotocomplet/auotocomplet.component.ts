@@ -34,7 +34,7 @@ longitude=7.809007;
     debugger
     const autocomplete  =  new  google.maps.places.Autocomplete(this.addresstext.nativeElement,
     {
-      componentRestrictions: { country:  'US' },
+      componentRestrictions: { country:  'IL' },
       types: ['establishment', 'geocode'] 
   
     });

@@ -1,0 +1,42 @@
+.contain_items{
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../assets/pictures/singIn/pic.jpg');
+}
+.title{
+    /* background-color: brown; */
+    height: 20%;
+    width: 50%;
+    margin-top: 8%;
+}
+
+.buttons{
+    display: flex;
+    /* background-color: aqua; */
+    width: 800px;
+    height: 40%;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: #080662;
+    font-family:sans-serif; 
+    margin-top: 10%;
+    margin-left: 20%; 
+
+   } 
+   
+button{
+    margin-top: 5%;
+    margin-left:40%; 
+    width: 120px;
+    height:40px;
+    background-color:#080662;
+    color: white;
+
+}   

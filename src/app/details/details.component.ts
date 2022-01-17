@@ -30,7 +30,15 @@ export class DetailsComponent implements OnInit {
   //   alert('User update!')
   // }
 
-
+edit()
+{
+  debugger
+  this.userService.edit(this.currentUser).subscribe(
+    data=>{
+      sessionStorage.setItem('currentUser',JSON.stringify(this.currentUser));
+    }
+  )
+}
 }
 
 
