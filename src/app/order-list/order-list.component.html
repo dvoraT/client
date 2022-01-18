@@ -16,13 +16,33 @@
            <td>שם שליח</td>
            <td>קוד שליח</td>
 
-   
-  
-   
-   
-   
+
          </tr>
        </thead>
+       <tbody>
+      
+         <tr *ngFor="let item of listOrder ">
+           <td>{{item.order_number}}</td>
+           <td>{{item.oredr_status}}</td>
+
+           <td>{{item.boxes_amount}}</td>
+
+           <td>{{item.deadline_date}}</td>
+
+           <td>{{item.customer_id}}</td>
+
+           <td>{{item.route_id}}</td>
+           <td>{{item.delivery_id}}</td>
+           <td>{{item.user_id}}</td>
+           <td>{{item.creation_date}}</td>
+
+
+           
+
+
+         </tr>
+
+       </tbody>
 
      </table>
    

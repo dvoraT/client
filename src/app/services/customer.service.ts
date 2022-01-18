@@ -16,7 +16,7 @@ isEdit:boolean;
 
   //שליפה
  // שליפת השליחים של היוזר הנוכחי
- getMyCustomers():Observable<Array<Customer>>{
+ getMyCustomers():Observable<Customer[]>{
    debugger
   return this.http.get<Array<Customer>>(this.url+"/getMyCustomers/"+this.userService.currentUser.id);
 }

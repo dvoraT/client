@@ -47,7 +47,7 @@ export class DeliveryService {
 
   isExist(phoneNumber:string){
     debugger
-    return this.http.get<Delivery>(this.url+"/isExist"+phoneNumber).subscribe(
+    return this.http.get<Delivery>(this.url+"/isExist/"+phoneNumber).subscribe(
       data=>{
         if(data!=undefined)
         {
@@ -62,7 +62,10 @@ export class DeliveryService {
            debugger
         }
 
-      }
+
+      },
+      err=>{console.log("error")}
+      
     );
   }
  

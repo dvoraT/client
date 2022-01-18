@@ -21,7 +21,9 @@ export class NewOrderComponent implements OnInit {
   //הזמנה חדשה
   newOrder:Order=new Order();
   newCustomer:Customer=new Customer();
- 
+  listCustomers:Array<Customer>=new Array<Customer>();
+  listCustomersFilter:Array<Customer>=new Array<Customer>();
+  search: '';
 // newDate:Date=new Date();
 
 
@@ -42,9 +44,15 @@ export class NewOrderComponent implements OnInit {
 //   marker: any;
   
   // private NgZone: NgZone, private MapsAPILoader: MapsAPILoader
-  constructor(public customerService:CustomerService,private paService:PersonalAereaService, public orderService:OrderService) { }
+  constructor(public customerService:CustomerService,private paService:PersonalAereaService, public orderService:OrderService) 
+  { 
+  }
   ngOnInit() {
- 
+    this.customerService
+      .getMyCustomers()
+           .subscribe((customer) => {
+        this.listCustomers = customer;this.listCustomersFilter=customer;
+      });
   }
 
 
@@ -72,4 +80,10 @@ export class NewOrderComponent implements OnInit {
   
   }
 
+  filterMenaces(str: string) {
+    if (str!='') {
+        this.listCustomersFilter = this.listCustomers.filter(a => a.l_name.startsWith(str));
+                                              
+    }
+  }
 }

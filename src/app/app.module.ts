@@ -39,6 +39,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { SingInAsComponent } from './sing-in-as/sing-in-as.component';
 import { DeliverySingInComponent } from './delivery-sing-in/delivery-sing-in.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 // import { RecommendationsComponent } from './recommendations/recommendations.component';
 @NgModule({
@@ -96,6 +97,7 @@ import { DeliverySingInComponent } from './delivery-sing-in/delivery-sing-in.com
     
 
     CustomersComponent,
+     FilterPipe,
 
     
 

@@ -32,7 +32,11 @@
 <h1 style="text-align: center;">הכנס פרטי הזמנה:</h1>
 
 <div class="text_contain">
-   
+  <input [(ngModel)]="search" id="search"  placeholder=" להתחיל להקליד שם משפחה..." name="search">
+   <select>
+    <option value="empty"></option>
+     <option *ngFor="let item of listCustomersFilter | filter: search">{{item.f_name}} {{item.l_name}}</option>
+   </select>
     <h1>סטטוס</h1>
     <input  type="text" class="form__field"  name="oredr_status" [(ngModel)]="newOrder.oredr_status" />
     <label  class="form__label"> </label>
