@@ -10,8 +10,8 @@ export class AppComponent {
     google: any
   title = 'client';
   constructor(public router:Router){}
-  // ngOnInit(){
-  //   this.router.navigate(['/Nav/Home'])
-  // }
+  ngOnInit(){
+   // this.router.navigate(['/Nav/Home'])
+  }
 }
 
